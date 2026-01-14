@@ -27,11 +27,217 @@ Load necessary kernel modules
 > **overlay** - An overlay kernel module allows you to create a writable overlay filesystem on top of an existing filesystem, enabling modifications without altering the original data.
 > https://influentcoder.com/posts/overlayfs/
 > **br_netfilter** - br_netfilter plays a critical role in this network management by enabling packet filtering and network policy enforcement on bridged networks. br_netfilter ensures network policies can be enforced on all traffic passing through bridge devices.
+> https://architecture-evolution.blogspot.com/2024/07/understanding-brnetfilter-in-kubernetes.html
 
 ```
 sudo modprobe overlay
 sudo modprobe br_netfilter
 ```
 
+Ensure bridged IPv4/IPv6 traffic is visible to `iptables`:
+> [!NOTE]
+> Manually enable IPv4 packet forwarding as by default, the Linux kernel does not allow IPv4 packets to be routed between interfaces.
+> https://kubernetes.io/docs/setup/production-environment/container-runtimes/#network-configuration
 ```
+sudo tee /etc/sysctl.d/kubernetes.conf <<EOF
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+net.ipv4.ip_forward = 1
+EOF
+```
+
+```
+sudo sysctl --system
+```
+
+Install Docker or Containerd (Container Runtime)
+> [!NOTE]
+> On Linux, [control groups](https://kubernetes.io/docs/reference/glossary/?all=true#term-cgroup) are used to constrain resources that are allocated to processes. Both the [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet) and the underlying container runtime need to interface with control groups to enforce [resource management for pods and containers](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/) and set resources such as cpu/memory requests and limits. To interface with control groups, the kubelet and the container runtime need to use a _cgroup driver_. It's critical that the kubelet and the container runtime use the same cgroup driver and are configured the same.
+> https://kubernetes.io/docs/setup/production-environment/container-runtimes/#cgroup-drivers
+
+```
+sudo apt install -y containerd
+sudo mkdir -p /etc/containerd
+containerd config default | sudo tee /etc/containerd/config.toml
+sudo sed -i 's/SystemdCgroup = false/SystemdCgroup = true/' /etc/containerd/config.toml
+```
+
+> [!NOTE]
+> https://kubernetes.io/docs/setup/production-environment/container-runtimes/#override-pause-image-containerd
+```
+sudo nano /etc/containerd/config.toml
+press `Ctrl + W` for search and type [plugins."io.containerd.grpc.v1.cri"]
+update below image
+sandbox_image = "registry.k8s.io/pause:3.10"
+Then restart  the process
+sudo systemctl restart containerd
+sudo systemctl enable containerd
+```
+
+Install Kubernetes with `kubeadm`
+```
+sudo apt install -y apt-transport-https ca-certificates curl gpg
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.33/deb/Release.key | \
+sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+echo "deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] \
+https://pkgs.k8s.io/core:/stable:/v1.33/deb/ /" | \
+sudo tee /etc/apt/sources.list.d/kubernetes.list
+sudo apt update
+sudo apt install -y kubelet kubeadm kubectl
+sudo apt-mark hold kubelet kubeadm kubectl
+```
+> [!NOTE]
+> The following additional packages will be installed:
+  cri-tools kubernetes-cni
+The following NEW packages will be installed:
+  cri-tools kubeadm kubectl kubelet kubernetes-cni
+
+Initialise the control plane (This cidr is required for Flannel)
+```
+sudo kubeadm init --pod-network-cidr=10.244.0.0/16
+```
+
+This returns an error for low memory, so need to set static memory more than 1700MB
+```
+I0114 12:44:08.369706   11192 version.go:261] remote version is much newer: v1.35.0; falling back to: stable-1.33
+[init] Using Kubernetes version: v1.33.7
+[preflight] Running pre-flight checks
+error execution phase preflight: [preflight] Some fatal errors occurred:
+        [ERROR Mem]: the system RAM (621 MB) is less than the minimum 1700 MB
+[preflight] If you know what you are doing, you can make a check non-fatal with `--ignore-preflight-errors=...`
+To see the stack trace of this error execute with --v=5 or higher
+```
+
+After changing this rerun the command and it will succedd with this log
+```
+I0114 13:09:44.584851    1364 version.go:261] remote version is much newer: v1.35.0; falling back to: stable-1.33
+[init] Using Kubernetes version: v1.33.7
+[preflight] Running pre-flight checks
+[preflight] Pulling images required for setting up a Kubernetes cluster
+[preflight] This might take a minute or two, depending on the speed of your internet connection
+[preflight] You can also perform this action beforehand using 'kubeadm config images pull'
+[certs] Using certificateDir folder "/etc/kubernetes/pki"
+[certs] Generating "ca" certificate and key
+[certs] Generating "apiserver" certificate and key
+[certs] apiserver serving cert is signed for DNS names [k8s kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local] and IPs [10.96.0.1 192.168.0.17]
+[certs] Generating "apiserver-kubelet-client" certificate and key
+[certs] Generating "front-proxy-ca" certificate and key
+[certs] Generating "front-proxy-client" certificate and key
+[certs] Generating "etcd/ca" certificate and key
+[certs] Generating "etcd/server" certificate and key
+[certs] etcd/server serving cert is signed for DNS names [k8s localhost] and IPs [192.168.0.17 127.0.0.1 ::1]
+[certs] Generating "etcd/peer" certificate and key
+[certs] etcd/peer serving cert is signed for DNS names [k8s localhost] and IPs [192.168.0.17 127.0.0.1 ::1]
+[certs] Generating "etcd/healthcheck-client" certificate and key
+[certs] Generating "apiserver-etcd-client" certificate and key
+[certs] Generating "sa" key and public key
+[kubeconfig] Using kubeconfig folder "/etc/kubernetes"
+[kubeconfig] Writing "admin.conf" kubeconfig file
+[kubeconfig] Writing "super-admin.conf" kubeconfig file
+[kubeconfig] Writing "kubelet.conf" kubeconfig file
+[kubeconfig] Writing "controller-manager.conf" kubeconfig file
+[kubeconfig] Writing "scheduler.conf" kubeconfig file
+[etcd] Creating static Pod manifest for local etcd in "/etc/kubernetes/manifests"
+[control-plane] Using manifest folder "/etc/kubernetes/manifests"
+[control-plane] Creating static Pod manifest for "kube-apiserver"
+[control-plane] Creating static Pod manifest for "kube-controller-manager"
+[control-plane] Creating static Pod manifest for "kube-scheduler"
+[kubelet-start] Writing kubelet environment file with flags to file "/var/lib/kubelet/kubeadm-flags.env"
+[kubelet-start] Writing kubelet configuration to file "/var/lib/kubelet/config.yaml"
+[kubelet-start] Starting the kubelet
+[wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory "/etc/kubernetes/manifests"
+[kubelet-check] Waiting for a healthy kubelet at http://127.0.0.1:10248/healthz. This can take up to 4m0s
+[kubelet-check] The kubelet is healthy after 501.621905ms
+[control-plane-check] Waiting for healthy control plane components. This can take up to 4m0s
+[control-plane-check] Checking kube-apiserver at https://192.168.0.17:6443/livez
+[control-plane-check] Checking kube-controller-manager at https://127.0.0.1:10257/healthz
+[control-plane-check] Checking kube-scheduler at https://127.0.0.1:10259/livez
+[control-plane-check] kube-controller-manager is healthy after 1.61258158s
+[control-plane-check] kube-scheduler is healthy after 2.646129494s
+[control-plane-check] kube-apiserver is healthy after 4.503130757s
+[upload-config] Storing the configuration used in ConfigMap "kubeadm-config" in the "kube-system" Namespace
+[kubelet] Creating a ConfigMap "kubelet-config" in namespace kube-system with the configuration for the kubelets in the cluster
+[upload-certs] Skipping phase. Please see --upload-certs
+[mark-control-plane] Marking the node k8s as control-plane by adding the labels: [node-role.kubernetes.io/control-plane node.kubernetes.io/exclude-from-external-load-balancers]
+[mark-control-plane] Marking the node k8s as control-plane by adding the taints [node-role.kubernetes.io/control-plane:NoSchedule]
+[bootstrap-token] Using token: b6360d.2p4p533i7t2lm608
+[bootstrap-token] Configuring bootstrap tokens, cluster-info ConfigMap, RBAC Roles
+[bootstrap-token] Configured RBAC rules to allow Node Bootstrap tokens to get nodes
+[bootstrap-token] Configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials
+[bootstrap-token] Configured RBAC rules to allow the csrapprover controller automatically approve CSRs from a Node Bootstrap Token
+[bootstrap-token] Configured RBAC rules to allow certificate rotation for all node client certificates in the cluster
+[bootstrap-token] Creating the "cluster-info" ConfigMap in the "kube-public" namespace
+[kubelet-finalize] Updating "/etc/kubernetes/kubelet.conf" to point to a rotatable kubelet client certificate and key
+[addons] Applied essential addon: CoreDNS
+[addons] Applied essential addon: kube-proxy
+
+Your Kubernetes control-plane has initialized successfully!
+
+To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+Alternatively, if you are the root user, you can run:
+
+  export KUBECONFIG=/etc/kubernetes/admin.conf
+
+You should now deploy a pod network to the cluster.
+Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+
+Then you can join any number of worker nodes by running the following on each as root:
+
+kubeadm join 192.168.0.17:6443 --token b6360d.2p4p533i7t2lm608 \
+        --discovery-token-ca-cert-hash sha256:3d0c5b27a8f8461767287753de29ce4455db5a21d96a70f8f28f012a91be0c9f
+```
+
+Connect to the cluster as root user
+```
+export KUBECONFIG=/etc/kubernetes/admin.conf
+```
+
+Install [[Flannel]] network plugin (run only on master node):
+```
+kubectl apply -f https://github.com/flannel-io/flannel/releases/latest/download/kube-flannel.yml
+```
+
+```
+namespace/kube-flannel created
+serviceaccount/flannel created
+clusterrole.rbac.authorization.k8s.io/flannel created
+clusterrolebinding.rbac.authorization.k8s.io/flannel created
+configmap/kube-flannel-cfg created
+daemonset.apps/kube-flannel-ds created
+```
+
+```
+kubectl get ns
+NAME              STATUS   AGE
+default           Active   16m
+kube-flannel      Active   46s
+kube-node-lease   Active   16m
+kube-public       Active   16m
+kube-system       Active   16m
+```
+
+```
+kubectl get pod -A -o wide
+NAMESPACE      NAME                          READY   STATUS              RESTARTS      AGE   IP             NODE   NOMINATED NODE   READINESS GATES
+kube-flannel   kube-flannel-ds-4jt7d         0/1     Error               3 (40s ago)   91s   192.168.0.17   k8s    <none>           <none>
+kube-system    coredns-674b8bbfcf-hltbx      0/1     ContainerCreating   0             17m   <none>         k8s    <none>           <none>
+kube-system    coredns-674b8bbfcf-wm5cz      0/1     ContainerCreating   0             17m   <none>         k8s    <none>           <none>
+kube-system    etcd-k8s                      1/1     Running             0             17m   192.168.0.17   k8s    <none>           <none>
+kube-system    kube-apiserver-k8s            1/1     Running             0             17m   192.168.0.17   k8s    <none>           <none>
+kube-system    kube-controller-manager-k8s   1/1     Running             0             17m   192.168.0.17   k8s    <none>           <none>
+kube-system    kube-proxy-p2w7j              1/1     Running             0             17m   192.168.0.17   k8s    <none>           <none>
+kube-system    kube-scheduler-k8s            1/1     Running             0             17m   192.168.0.17   k8s    <none>           <none>
+```
+This kube-flannel-ds-4jt7d (Demon set) will get error until at least one worker node is up
+```
+kubectl get nodes
+NAME   STATUS   ROLES           AGE   VERSION
+k8s    Ready    control-plane   23m   v1.33.7
 ```
