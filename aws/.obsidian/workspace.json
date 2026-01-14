@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "16ef0c031f20a769",
+            "id": "bed02380a2e60d92",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "aws/DevOps/Kubernetes/Kubernetes.md",
-                "bFile": "aws/DevOps/Kubernetes/Kubernetes.md",
-                "aRef": ""
+                "file": "DevOps/Kubernetes/Flannel.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: Kubernetes  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Flannel"
             }
           }
         ]
@@ -194,10 +194,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "16ef0c031f20a769",
+  "active": "bed02380a2e60d92",
   "lastOpenFiles": [
     "DevOps/Kubernetes/Kubernetes.md",
+    "DevOps/Kubernetes/Flannel.md",
     "DevOps/Load Balancer/Load Balancer.md",
+    "Untitled.base",
+    "Welcome.md",
     "DevOps/Terraform/MAC Install.md",
     "Kong.md",
     "DevOps/Terraform",
@@ -205,8 +208,6 @@
     "DevOps/API Gateway/Api Gateway Vs Load Balancer.md",
     "DevOps/API Gateway/Envoy.md",
     "Devops.canvas",
-    "Welcome.md",
-    "Untitled.base",
     "DevOps/Load Balancer/Network Load Balancer.md",
     "DevOps/Ingress",
     "Order Management System Notes.md",
