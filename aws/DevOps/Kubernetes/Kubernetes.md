@@ -13,13 +13,19 @@ https://www.youtube.com/watch?v=KBqfsfRDv8E
 sudo apt update && sudo apt upgrade -y
 ```
 
-Disable swap
+Disable swap as kubernitis can not work with swap on
 ```
 sudo swapoff -a
 sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 ```
 > [!NOTE]
 > sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab - not working, if swap line is not commented out in /etc/fstab file; comment out swap line manually otherwise next reboot will revert the changes
+
+Check swap using one of these commands
+```
+free -m
+htop
+```
 
 Load necessary kernel modules
 > [!NOTE]
@@ -72,6 +78,8 @@ sandbox_image = "registry.k8s.io/pause:3.10"
 Then restart  the process
 sudo systemctl restart containerd
 sudo systemctl enable containerd
+Check with
+sudo systemctl status containerd
 ```
 
 Install Kubernetes with `kubeadm`
@@ -89,11 +97,20 @@ sudo apt-mark hold kubelet kubeadm kubectl
 ```
 > [!NOTE]
 > The following additional packages will be installed:
-  cri-tools kubernetes-cni
-The following NEW packages will be installed:
-  cri-tools kubeadm kubectl kubelet kubernetes-cni
+ > cri-tools kubernetes-cni
+ > The following NEW packages will be installed:
+> cri-tools kubeadm kubectl kubelet kubernetes-cni
+> [[cri-tools]] aims to provide a series of debugging and validation tools for Kubelet CRI
+> https://github.com/kubernetes-sigs/cri-tools/blob/master/README.md
+> https://kubernetes.io/docs/tasks/debug/debug-cluster/crictl/
+> [[kubernetes-cni]] Container Network Interface (CNI) is a framework for dynamically configuring networking resources.
+> **Kubeadm** is a tool built to provide `kubeadm init` and `kubeadm join` as best-practice "fast paths" for creating Kubernetes clusters. kubeadm performs the actions necessary to get a minimum viable cluster up and running.
+> https://kubernetes.io/docs/reference/setup-tools/kubeadm/
+> **kubectl** is a client for the Kubernetes API. The Kubernetes API is an HTTP REST API. This API is the real Kubernetes user interface. Kubernetes is fully controlled through this API. This means that every Kubernetes operation is exposed as an API endpoint and can be executed by an HTTP request to this endpoint. Consequently, the main job of kubectl is to carry out HTTP requests to the Kubernetes API
+> https://dockerlabs.collabnix.com/kubernetes/beginners/what-is-kubect.html
+> **kubelet** https://www.windriver.com/solutions/learning/what-is-a-kubelet
 
-Initialise the control plane (This cidr is required for Flannel)
+Initialise the control plane which makes a node **master** (This cidr is required for Flannel)
 ```
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 ```
@@ -241,3 +258,52 @@ kubectl get nodes
 NAME   STATUS   ROLES           AGE   VERSION
 k8s    Ready    control-plane   23m   v1.33.7
 ```
+
+Add worker node to master
+```
+kubeadm join 192.168.0.17:6443 --token b6360d.2p4p533i7t2lm608 \
+        --discovery-token-ca-cert-hash sha256:3d0c5b27a8f8461767287753de29ce4455db5a21d96a70f8f28f012a91be0c9f
+```
+If run as non admin user gives an error
+```
+[preflight] Running pre-flight checks
+error execution phase preflight: [preflight] Some fatal errors occurred:
+        [ERROR IsPrivilegedUser]: user is not running as root
+[preflight] If you know what you are doing, you can make a check non-fatal with `--ignore-preflight-errors=...`
+To see the stack trace of this error execute with --v=5 or higher
+```
+So run join command as root / admin user
+```
+[preflight] Running pre-flight checks
+[preflight] Reading configuration from the "kubeadm-config" ConfigMap in namespace "kube-system"...
+[preflight] Use 'kubeadm init phase upload-config --config your-config-file' to re-upload it.
+[kubelet-start] Writing kubelet configuration to file "/var/lib/kubelet/config.yaml"
+[kubelet-start] Writing kubelet environment file with flags to file "/var/lib/kubelet/kubeadm-flags.env"
+[kubelet-start] Starting the kubelet
+[kubelet-check] Waiting for a healthy kubelet at http://127.0.0.1:10248/healthz. This can take up to 4m0s
+[kubelet-check] The kubelet is healthy after 501.887312ms
+[kubelet-start] Waiting for the kubelet to perform the TLS Bootstrap
+
+This node has joined the cluster:
+* Certificate signing request was sent to apiserver and a response was received.
+* The Kubelet was informed of the new secure connection details.
+
+Run 'kubectl get nodes' on the control-plane to see this node join the cluster.
+```
+
+No kubectl command runs from worker as it does not have admin cluster config. it has kubelet.conf. So login to the master node and run kubelet commands
+```
+kubectl get pod -A -o wide
+NAMESPACE      NAME                          READY   STATUS              RESTARTS         AGE     IP             NODE           NOMINATED NODE   READINESS GATES
+kube-flannel   kube-flannel-ds-4jt7d         0/1     CrashLoopBackOff    30 (3m52s ago)   6h5m    192.168.0.17   k8s            <none>           <none>
+kube-flannel   kube-flannel-ds-qlht5         1/1     Running             0                22m     192.168.0.16   k8s-worker-2   <none>           <none>
+kube-system    coredns-674b8bbfcf-hltbx      0/1     ContainerCreating   0                6h21m   <none>         k8s            <none>           <none>
+kube-system    coredns-674b8bbfcf-wm5cz      0/1     ContainerCreating   0                6h21m   <none>         k8s            <none>           <none>
+kube-system    etcd-k8s                      1/1     Running             1 (50m ago)      6h21m   192.168.0.17   k8s            <none>           <none>
+kube-system    kube-apiserver-k8s            1/1     Running             1 (50m ago)      6h21m   192.168.0.17   k8s            <none>           <none>
+kube-system    kube-controller-manager-k8s   1/1     Running             1 (50m ago)      6h21m   192.168.0.17   k8s            <none>           <none>
+kube-system    kube-proxy-p2w7j              1/1     Running             1 (50m ago)      6h21m   192.168.0.17   k8s            <none>           <none>
+kube-system    kube-proxy-qb42k              1/1     Running             0                22m     192.168.0.16   k8s-worker-2   <none>           <none>
+kube-system    kube-scheduler-k8s            1/1     Running             1 (50m ago)      6h21m   192.168.0.17   k8s            <none>           <none>
+```
+Only kube-proxy and flannel pods are scheduled in worker node
