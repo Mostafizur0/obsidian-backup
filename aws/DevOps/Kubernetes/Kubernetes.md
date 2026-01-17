@@ -13,6 +13,8 @@ https://www.youtube.com/watch?v=KBqfsfRDv8E
 sudo apt update && sudo apt upgrade -y
 ```
 
+How LVM works?
+
 Disable swap as kubernitis can not work with swap on
 ```
 sudo swapoff -a
@@ -23,6 +25,7 @@ sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 
 Check swap using one of these commands
 ```
+swapon --show
 free -m
 htop
 ```
@@ -307,3 +310,7 @@ kube-system    kube-proxy-qb42k              1/1     Running             0      
 kube-system    kube-scheduler-k8s            1/1     Running             1 (50m ago)      6h21m   192.168.0.17   k8s            <none>           <none>
 ```
 Only kube-proxy and flannel pods are scheduled in worker node
+
+Menifest saved in /etc/kubernetis/menifest
+kubeadm command to create token
+
