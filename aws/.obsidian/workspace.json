@@ -22,20 +22,6 @@
             }
           },
           {
-            "id": "da57c5369fe135eb",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "aws/.obsidian/workspace.json",
-                "bFile": "aws/.obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
-            }
-          },
-          {
             "id": "957c9cbb0f83f371",
             "type": "leaf",
             "state": {
@@ -221,7 +207,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "da57c5369fe135eb",
+  "active": "3d1fafdd13bf2d9a",
   "lastOpenFiles": [
     "DevOps/Kubernetes/Hypervisor.md",
     "NOTE.md",
