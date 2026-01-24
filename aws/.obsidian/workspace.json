@@ -13,24 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Kubernetes/Hypervisor.md",
+                "file": "Welcome.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Hypervisor"
+              "title": "Welcome"
             }
           },
           {
-            "id": "957c9cbb0f83f371",
+            "id": "b9a7fe91d14fca9c",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "split-diff-view",
               "state": {
-                "currentVersion": "1.11.4"
+                "aFile": "aws/.obsidian/workspace.json",
+                "bFile": "aws/.obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.4"
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ],
@@ -207,30 +209,39 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3d1fafdd13bf2d9a",
+  "active": "b9a7fe91d14fca9c",
   "lastOpenFiles": [
-    "DevOps/Kubernetes/Hypervisor.md",
-    "NOTE.md",
+    "Untitled.base",
     "DevOps/Kubernetes/Kubernetes.md",
     "DevOps/Kubernetes/Flannel.md",
+    "DevOps/Kubernetes/attachments/Pasted image 20260124125125.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20260124125049.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20260124125015.png",
+    "DevOps/Kubernetes/Hypervisor.md",
+    "DevOps/Kubernetes/attachments/Pasted image 20260124115459.png",
+    "DevOps/Kubernetes/kubernetes-setup-guide.md",
+    "DevOps/Terraform/Exam Guide.md",
+    "DevOps/Roadmap.md",
+    "DevOps/Terraform/MAC Install.md",
+    "DevOps/Kubernetes/attachments/Pasted image 20260124103701.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20260124103428.png",
+    "Welcome.md",
+    "Kong.md",
+    "Devops.canvas",
+    "Order Management System Notes.md",
+    "DevOps/Kubernetes/cri-tools.md",
+    "DevOps/API Gateway/Envoy.md",
+    "DevOps/API Gateway/Api Gateway Vs Load Balancer.md",
+    "DevOps/API Gateway/API Gateway.md",
+    "NOTE.md",
     "DevOps/Kubernetes/kubernetes-cni.md",
     "DevOps/Kubernetes/attachments/Pasted image 20260116110154.png",
     "DevOps/Kubernetes/attachments",
-    "DevOps/Kubernetes/cri-tools.md",
-    "Welcome.md",
-    "Untitled.base",
-    "DevOps/Terraform/MAC Install.md",
     "DevOps/Load Balancer/Network Load Balancer.md",
-    "Kong.md",
-    "Devops.canvas",
     "DevOps/Load Balancer/Load Balancer.md",
     "DevOps/Terraform",
     "DevOps/Kubernetes",
-    "DevOps/API Gateway/Api Gateway Vs Load Balancer.md",
-    "DevOps/API Gateway/Envoy.md",
     "DevOps/Ingress",
-    "Order Management System Notes.md",
-    "DevOps/API Gateway/API Gateway.md",
     "DevOps/Load Balancer",
     "DevOps/API Gateway",
     "DevOps",

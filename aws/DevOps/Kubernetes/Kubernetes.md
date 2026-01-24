@@ -28,13 +28,18 @@ Check swap using one of these commands
 swapon --show
 free -m
 htop
+lsblk
 ```
 
 Load necessary kernel modules
 > [!NOTE]
 > Kernel modules are pieces of code that can be loaded into the Linux kernel to extend its functionality
-> **overlay** - An overlay kernel module allows you to create a writable overlay filesystem on top of an existing filesystem, enabling modifications without altering the original data.
+> **overlayfs** - An overlay kernel module allows you to create a writable overlay filesystem on top of an existing filesystem, enabling modifications without altering the original data.
 > https://influentcoder.com/posts/overlayfs/
+> **overlay network technology**—often implemented via kernel modules or user-space agents—is commonly used in Kubernetes to enable communication between pods across different nodes. These solutions (e.g., VXLAN in Flannel, OVN-Kubernetes) encapsulate packet traffic to create a virtual layer over the physical network.
+> Do not confuse **Overlay networking** (used for CNI traffic) with **OverlayFS**, which is a storage driver used for container file systems.
+> While overlay networks are a very common choice for Kubernetes networking, they are not the _only_ way nodes communicate; direct **routing or cloud-native VPC networking** (e.g., Terway) are also used.
+> https://medium.com/@extio/understanding-kubernetes-node-to-node-communication-a-deep-dive-e1d6a5ff87f3
 > **br_netfilter** - br_netfilter plays a critical role in this network management by enabling packet filtering and network policy enforcement on bridged networks. br_netfilter ensures network policies can be enforced on all traffic passing through bridge devices.
 > https://architecture-evolution.blogspot.com/2024/07/understanding-brnetfilter-in-kubernetes.html
 
