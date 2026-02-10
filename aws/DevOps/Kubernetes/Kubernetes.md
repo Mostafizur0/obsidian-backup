@@ -320,7 +320,7 @@ Only kube-proxy and flannel pods are scheduled in worker node
 
 > [!NOTE]
 > KUBE-PROXY
-> Just to understand kube-proxy, Here’s how Kubernetes services work! A service is a collection of pods, which each have their own IP address (like 10.1.0.3, 10.2.3.5, 10.3.5.6)
+> `kube-proxy` is a **DaemonSet** and is installed when using `kubeadm`. Just to understand kube-proxy, Here’s how Kubernetes services work! A service is a collection of pods, which each have their own IP address (like 10.1.0.3, 10.2.3.5, 10.3.5.6)
 > Every Kubernetes service gets an IP address (like 10.23.1.2)
 > kube-dns resolves Kubernetes service DNS names to IP addresses (so my-svc.my-namespace.svc.cluster.local might map to 10.23.1.2)
 > kube-proxy sets up iptables rules in order to do random load balancing between them.
@@ -329,3 +329,55 @@ Only kube-proxy and flannel pods are scheduled in worker node
 
 Menifest saved in /etc/kubernetis/menifest
 kubeadm command to create token
+
+#### Static pod
+_Static Pods_ are managed directly by the **kubelet daemon** on a specific node, without the API server observing them. Managed directly by the kubelet, they are continuously monitored based on pod definition files placed in a designated directory. **etcd and kube-apiserver** are examples of static pods.
+DaemonSets ensure that a specific pod runs on **all nodes in a cluster, managed by a DaemonSet controller via the API server**. In contrast, static pods are created directly by the kubelet without intervention from the API server or other control plane components. Both methods bypass the kube scheduler.
+**They get IP from the node they are scheduled not from [[kubernetes-cni]]**
+```
+cat /var/lib/kubelet/config.yaml
+```
+
+![[Pasted image 20260125184127.png]]
+
+https://notes.kodekloud.com/docs/Kubernetes-and-Cloud-Native-Associate-KCNA/Scheduling/Static-Pods
+
+#### Folder Structure
+https://yuminlee2.medium.com/kubernetes-folder-structure-and-functionality-overview-5b4ec10c32bf
+![[Pasted image 20260124191013.png]]
+#### Etcd
+It stores the configuration data, state data, and metadata in Kubernetes. Etcd is a distributed key-value store that Kubernetes uses to store ***all the data related to the state of the cluster. This includes the cluster’s configuration, node information, pod states, service details, and secrets***. In simple terms, etcd is the brain of your Kubernetes cluster, keeping track of everything.
+We know that Kubernetes is an orchestration tool whose tasks involve managing application container workloads, their configuration, deployments, service discovery, load balancing, scheduling, scaling, and monitoring, and many more tasks which might spread across multiple machines across many locations. Kubernetes needs to maintain coordination between all the components involved.
+But to achieve that reliable coordination, k8s needs a data source that can help with the information about all the components, their required configuration, state data, etc. That data store must provide a **consistent, single source of truth at any given point in time. In Kubernetes, that job is done by etcd**. etcd is the data store used to create and maintain the version of the truth.
+https://thesecretlivesofdata.com/raft/
+https://medium.com/@__karnati/understanding-etcd-in-kubernetes-a-beginners-guide-743ecf17c361
+
+#### Backing up Your Etcd Cluster
+The etcd server is the **only stateful component of the Kubernetes cluster**. Kuberenetes stores all API objects and settings on the etcd server.  
+Backing up this storage is **enough to restore the Kubernetes cluster’s state completely.**
+If etcd data becomes corrupted or is lost, the entire Kubernetes cluster could be rendered inoperable. Therefore, it’s critical to back up etcd regularly. Backups allow you to restore the cluster to a previous healthy state if something goes wrong, such as:
+1. **Prevent Data Loss:** Regular backups to avoid accidental data deletion, data corruption or misconfigurations.
+2. **Disaster Recovery:** Off-site backups for recovering from catastrophic etcd cluster failures. Hardware failures, Network issues that cause split-brain situations
+3. **Cluster Migration:** Backup before migrating, restore on the new cluster for a seamless transition.
+4. **Rollback to Stable State:** Use backups to revert the cluster to a stable state after faulty changes.
+5. **Testing & Development:** Snapshot before testing changes; restore if issues arise.
+
+https://learn.k21academy.com/kubernetes/etcd-backup-restore-in-k8s-step-by-step/
+https://itgix.com/blog/etcd-cluster-backup-and-restore-for-kubernetes-2/
+```
+ETCDCTL_API=3 etcdctl --endpoints=https://127.0.0.1:2379 \ --cacert=/etc/kubernetes/pki/etcd/ca.crt \ --cert=/etc/kubernetes/pki/etcd/server.crt \ --key=/etc/kubernetes/pki/etcd/server.key \ snapshot save <backup-file-location>
+```
+
+Before restoring from a backup, ensure that you have a good understanding of the etcd cluster's state. It's important to **stop the etcd service, perform the restore, and then restart etcd.** Additionally, verify the integrity of your backup files.
+```
+ETCDCTL_API=3 etcdctl --data-dir="/var/lib/etcd-backup" \ --endpoints=https://127.0.0.1:2379 \ --cacert=/etc/kubernetes/pki/etcd/ca.crt \ --cert=/etc/kubernetes/pki/etcd/server.crt \ --key=/etc/kubernetes/pki/etcd/server.key \ snapshot restore etcd-backup.db
+```
+
+The etcd backup process can be automated using scripts and scheduling tools. You can create a script that runs the etcdctl snapshot save command and use a tool like cron (on Linux) or Task Scheduler (on Windows) to schedule regular backups.
+
+### [[Load Balancer]]
+
+### [[Longhorn]]
+
+### [[Ingress]]
+
