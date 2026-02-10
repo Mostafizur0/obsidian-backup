@@ -25,14 +25,14 @@
             "id": "c25c4023f05df813",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "aws/DevOps/Roadmap.md",
-                "bFile": "aws/DevOps/Roadmap.md",
-                "aRef": ""
+                "file": "Draft.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: Roadmap  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Draft"
             }
           }
         ],
@@ -209,11 +209,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c25c4023f05df813",
+  "active": "84b06326bce11303",
   "lastOpenFiles": [
+    "Draft.md",
+    "Untitled.md",
     "DevOps/Kubernetes/attachments/Pasted image 20260125184127.png",
     "DevOps/Kubernetes/attachments/Pasted image 20260124191013.png",
-    "Draft.md",
     "Welcome.md",
     "DevOps/Roadmap.md",
     "DevOps/Kubernetes/kubernetes-setup-guide.md",
