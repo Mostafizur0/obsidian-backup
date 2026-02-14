@@ -1,0 +1,10 @@
+- / (root): top-level directory
+- /bin, /sbin: essential user and system binaries
+- /usr (unix system resources): userland programs and libraries (non-essential for early boot)
+- /lib, /lib64: shared libraries
+- /etc: system configuration
+- /var: variable data (logs, spool)
+- /home: user directories
+- /proc, /sys: virtual filesystems exposing kernel and device state
+- /dev: device nodes
+- /run: volatile runtime data
