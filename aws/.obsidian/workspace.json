@@ -13,12 +13,12 @@
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "aws/SystemDesign/Resources.md",
-                "bFile": "aws/SystemDesign/Resources.md",
+                "aFile": "aws/SystemDesign/Basic Elements.md",
+                "bFile": "aws/SystemDesign/Basic Elements.md",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: Resources  (Working Tree)"
+              "title": "Diff: Basic Elements  (Working Tree)"
             }
           },
           {
@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SystemDesign/Basic Elements.md",
+                "file": "SystemDesign/Resources.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basic Elements"
+              "title": "Resources"
             }
           }
         ]
@@ -220,10 +220,10 @@
   },
   "active": "bed02380a2e60d92",
   "lastOpenFiles": [
-    "DevOps/Bash/attachments/Pasted image 20260214193430.png",
     "DevOps/Bash/Command list.md",
-    "SystemDesign/Basic Elements.md",
     "SystemDesign/Resources.md",
+    "SystemDesign/Basic Elements.md",
+    "DevOps/Bash/attachments/Pasted image 20260214193430.png",
     "Untitled.base",
     "DevOps/Bash/attachments",
     "DevOps/Linux/Containres in Linux.md",

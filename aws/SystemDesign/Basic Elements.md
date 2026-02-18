@@ -13,7 +13,7 @@
 7. SQL vs NoSQL,
     
 8. Load Balancing,
-    
+    https://www.youtube.com/watch?v=DVR0zvDYJgY
 9. Load Balancing Algorithms,
     
 10. Caching,
@@ -76,7 +76,7 @@
 39. WebSockets
     
 39. API Gateways
-    
+	https://www.youtube.com/watch?v=DVR0zvDYJgY
 40. Distributed Cache
     
 41. Cache Eviction Policies
