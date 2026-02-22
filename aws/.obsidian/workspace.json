@@ -11,14 +11,14 @@
             "id": "bed02380a2e60d92",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "aws/SystemDesign/Basic Elements.md",
-                "bFile": "aws/SystemDesign/Basic Elements.md",
-                "aRef": ""
+                "file": "DevOps/Kubernetes/kubernetes-setup-guide.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: Basic Elements  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "kubernetes-setup-guide"
             }
           },
           {
@@ -35,17 +35,18 @@
             "id": "9a6efc6664646997",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "SystemDesign/Resources.md",
-                "mode": "preview",
-                "source": false
+                "aFile": "aws/SystemDesign/Low level.md",
+                "bFile": "aws/SystemDesign/Low level.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Resources"
+              "icon": "diff",
+              "title": "Diff: Low level  (Working Tree)"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -218,11 +219,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bed02380a2e60d92",
+  "active": "9a6efc6664646997",
   "lastOpenFiles": [
-    "DevOps/Bash/Command list.md",
+    "Algorithm/attachments/Pasted image 20260221034153.png",
+    "Algorithm/attachments/Pasted image 20260221035540.png",
+    "Welcome.md",
     "SystemDesign/Resources.md",
+    "DevOps/Kubernetes/kubernetes-setup-guide.md",
+    "Algorithm/Patterns.md",
+    "DevOps/Kubernetes/Interview Q&A.md",
+    "SystemDesign/Scaling.md",
+    "Algorithm/attachments",
+    "Algorithm/Resources.md",
+    "AgenticAI/Resources.md",
+    "AgenticAI",
     "SystemDesign/Basic Elements.md",
+    "SystemDesign/Low level.md",
+    "DevOps/Roadmap.md",
+    "Frontend/Resources.md",
+    "Frontend",
+    "Algorithm",
+    "SRE/Resources.md",
+    "SRE",
+    "DevOps/Bash/Command list.md",
     "DevOps/Bash/attachments/Pasted image 20260214193430.png",
     "Untitled.base",
     "DevOps/Bash/attachments",
@@ -232,7 +251,6 @@
     "Devops.canvas",
     "Kong.md",
     "Order Management System Notes.md",
-    "Welcome.md",
     "DevOps/Linux/Isolation and Resource Control.md",
     "DevOps/Linux/Troubleshooting by Layer.md",
     "DevOps/Linux/Linux Filesystem Hierarchy (FHS).md",
@@ -246,26 +264,9 @@
     "DevOps/Linux/attachments/Pasted image 20260213185819.png",
     "DevOps/Linux/attachments",
     "DevOps/Kubernetes/Cut for Time.md",
-    "MLOps",
-    "DevSecOps",
-    "DevOps/Observability",
-    "DevOps/Monitoring",
-    "DevOps/Go",
-    "DevOps/Kubernetes/cri-tools.md",
-    "Draft.md",
     "DevOps/Kubernetes/attachments/Pasted image 20260125184127.png",
     "DevOps/Kubernetes/attachments/Pasted image 20260124191013.png",
-    "DevOps/Roadmap.md",
-    "DevOps/Kubernetes/kubernetes-setup-guide.md",
-    "DevOps/Kubernetes/Kubernetes.md",
-    "DevOps/Load Balancer/Load Balancer.md",
-    "DevOps/persistent volumes/Longhorn.md",
-    "DevOps/Kubernetes/Ingress.md",
-    "DevOps/Kubernetes/Overview of Kubernetes CNI Network Models.md",
-    "DevOps/Kubernetes/kubernetes-cni.md",
     "DevOps/Kubernetes/attachments/Pasted image 20260124173533.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260124125125.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260124125049.png",
     "Untitled 1.canvas"
   ]
 }
