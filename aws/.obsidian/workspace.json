@@ -32,17 +32,17 @@
             }
           },
           {
-            "id": "9a6efc6664646997",
+            "id": "dbe9f4ee73d90193",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "aws/SystemDesign/Low level.md",
-                "bFile": "aws/SystemDesign/Low level.md",
+                "aFile": "aws/.obsidian/workspace.json",
+                "bFile": "aws/.obsidian/workspace.json",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: Low level  (Working Tree)"
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ],
@@ -219,23 +219,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9a6efc6664646997",
+  "active": "dbe9f4ee73d90193",
   "lastOpenFiles": [
+    "DevOps/attachments/Pasted image 20260224021956.png",
+    "SystemDesign/Scaling.md",
+    "SystemDesign/Resources.md",
+    "SystemDesign/Low level.md",
+    "SystemDesign/Basic Elements.md",
+    "DevOps/Roadmap.md",
+    "DevOps/attachments",
     "Algorithm/attachments/Pasted image 20260221034153.png",
     "Algorithm/attachments/Pasted image 20260221035540.png",
     "Welcome.md",
-    "SystemDesign/Resources.md",
     "DevOps/Kubernetes/kubernetes-setup-guide.md",
     "Algorithm/Patterns.md",
     "DevOps/Kubernetes/Interview Q&A.md",
-    "SystemDesign/Scaling.md",
     "Algorithm/attachments",
     "Algorithm/Resources.md",
     "AgenticAI/Resources.md",
     "AgenticAI",
-    "SystemDesign/Basic Elements.md",
-    "SystemDesign/Low level.md",
-    "DevOps/Roadmap.md",
     "Frontend/Resources.md",
     "Frontend",
     "Algorithm",
@@ -262,11 +264,9 @@
     "DevOps/Linux/attachments/Pasted image 20260213213107.png",
     "DevOps/Linux/Windows Vs Linux.md",
     "DevOps/Linux/attachments/Pasted image 20260213185819.png",
-    "DevOps/Linux/attachments",
     "DevOps/Kubernetes/Cut for Time.md",
     "DevOps/Kubernetes/attachments/Pasted image 20260125184127.png",
     "DevOps/Kubernetes/attachments/Pasted image 20260124191013.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260124173533.png",
     "Untitled 1.canvas"
   ]
 }
