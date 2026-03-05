@@ -13,40 +13,56 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Kubernetes/kubernetes-setup-guide.md",
+                "file": "DevOps/Kubernetes/Homelab debug.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kubernetes-setup-guide"
+              "title": "Homelab debug"
             }
           },
           {
             "id": "0038ddf1aa6a15d3",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "DevOps/Kubernetes/Homelab.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Homelab"
             }
           },
           {
             "id": "dbe9f4ee73d90193",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "aws/.obsidian/workspace.json",
-                "bFile": "aws/.obsidian/workspace.json",
-                "aRef": ""
+                "file": "DevOps/Bash/Command list.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Command list"
+            }
+          },
+          {
+            "id": "3ad1fc59c6add78b",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "DevOps/Kubernetes/attachments/Pasted image 20260305235850.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260305235850"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -219,54 +235,55 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dbe9f4ee73d90193",
+  "active": "3ad1fc59c6add78b",
   "lastOpenFiles": [
+    "DevOps/Kubernetes/Etcd.md",
+    "DevOps/Kubernetes/Manifest, Image & Etcd Data.md",
+    "DevOps/Kubernetes/cri-tools.md",
+    "DevOps/Kubernetes/attachments/Pasted image 20260306022251.png",
+    "DevOps/Kubernetes/Control Plane.md",
+    "DevOps/Kubernetes/attachments/Pasted image 20260306022130.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20260306021925.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20260306021633.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20260306021256.png",
+    "DevOps/Kubernetes/Communication Between API server And Pods in Worker Nodes.md",
+    "DevOps/Kubernetes/Cut for Time.md",
+    "DevOps/Kubernetes/Flannel.md",
+    "DevOps/Kubernetes/Homelab.md",
+    "DevOps/Kubernetes/Homelab debug.md",
+    "DevOps/Kubernetes/Hypervisor.md",
+    "DevOps/Kubernetes/Ingress.md",
+    "DevOps/Kubernetes/Interview Q&A.md",
+    "DevOps/Kubernetes/Kubernetes.md",
+    "DevOps/Kubernetes/kubernetes-cni.md",
+    "DevOps/Kubernetes/kubernetes-setup-guide.md",
+    "DevOps/Kubernetes/Overview of Kubernetes CNI Network Models.md",
+    "DevOps/Kubernetes/attachments/Pasted image 20260306014911.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20260306000044.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20260305235850.png",
+    "DevOps/Bash/Command list.md",
+    "DevOps/Home lab setup (Mac).md",
+    "SystemDesign/Basic Elements.md",
     "DevOps/attachments/Pasted image 20260224021956.png",
     "SystemDesign/Scaling.md",
     "SystemDesign/Resources.md",
     "SystemDesign/Low level.md",
-    "SystemDesign/Basic Elements.md",
     "DevOps/Roadmap.md",
     "DevOps/attachments",
     "Algorithm/attachments/Pasted image 20260221034153.png",
-    "Algorithm/attachments/Pasted image 20260221035540.png",
     "Welcome.md",
-    "DevOps/Kubernetes/kubernetes-setup-guide.md",
     "Algorithm/Patterns.md",
-    "DevOps/Kubernetes/Interview Q&A.md",
     "Algorithm/attachments",
     "Algorithm/Resources.md",
-    "AgenticAI/Resources.md",
     "AgenticAI",
-    "Frontend/Resources.md",
     "Frontend",
     "Algorithm",
-    "SRE/Resources.md",
     "SRE",
-    "DevOps/Bash/Command list.md",
-    "DevOps/Bash/attachments/Pasted image 20260214193430.png",
     "Untitled.base",
     "DevOps/Bash/attachments",
-    "DevOps/Linux/Containres in Linux.md",
-    "DevOps/Linux/attachments/Pasted image 20260213185507.png",
-    "DevOps/Linux/Architecture.md",
     "Devops.canvas",
-    "Kong.md",
-    "Order Management System Notes.md",
-    "DevOps/Linux/Isolation and Resource Control.md",
-    "DevOps/Linux/Troubleshooting by Layer.md",
-    "DevOps/Linux/Linux Filesystem Hierarchy (FHS).md",
-    "DevSecOps/Authentication/JWT.md",
     "DevSecOps/Authentication",
     "SystemDesign",
-    "Untitled.md",
-    "DevOps/Linux/attachments/Pasted image 20260213213732.png",
-    "DevOps/Linux/attachments/Pasted image 20260213213107.png",
-    "DevOps/Linux/Windows Vs Linux.md",
-    "DevOps/Linux/attachments/Pasted image 20260213185819.png",
-    "DevOps/Kubernetes/Cut for Time.md",
-    "DevOps/Kubernetes/attachments/Pasted image 20260125184127.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260124191013.png",
     "Untitled 1.canvas"
   ]
 }

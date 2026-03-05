@@ -1,3 +1,5 @@
+https://medium.com/@enrique.torresds/setting-up-a-kubernetes-cluster-using-ubuntu-virtual-machines-and-hyper-v-part-i-8719f79d045e
+
 # Kubernetes Cluster Setup Guide
 
 This guide walks through setting up a production-ready Kubernetes cluster on Ubuntu VMs with one master node and two worker nodes.

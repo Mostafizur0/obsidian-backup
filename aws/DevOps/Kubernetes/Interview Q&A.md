@@ -29,3 +29,4 @@
 15. You want to enforce that all images used in the cluster must come from a trusted internal registry. How do you implement this at the policy level?  
   
 16. You're managing multi-region deployments using a single Kubernetes control plane. What architectural considerations must you address to avoid cross-region latency and single points of failure?
+17. What happend if a pod lost connection with the api server / control plane?

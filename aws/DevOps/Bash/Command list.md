@@ -8,6 +8,13 @@ ssh -i <secret-key-file-path> <username>:<ip-address>
 | ----- | ---------------------- |
 | -i    | identity file location |
 |       |                        |
+```shell
+hostname -I
+```
+
+```bash
+ip a
+```
 
 ```shell
 ls -ltr
