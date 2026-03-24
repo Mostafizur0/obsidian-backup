@@ -75,76 +75,151 @@
 38. Synchronous vs Asynchronous Communication.
 39. WebSockets
     
-39. API Gateways
+40. API Gateways
 	https://www.youtube.com/watch?v=DVR0zvDYJgY
-40. Distributed Cache
+41. Distributed Cache
     
-41. Cache Eviction Policies
+42. Cache Eviction Policies
     
-42. Proxy vs Reverse Proxy
+43. Proxy vs Reverse Proxy
     
-43. HTTP vs HTTPS
+44. HTTP vs HTTPS
     
-44. TCP vs UDP
+45. TCP vs UDP
     
-45. OSI Model
+46. OSI Model
     
-46. TLS/SSL
+47. TLS/SSL
     
-47. DNS Load Balancing
+48. DNS Load Balancing
     
-48. Anycast Routing
+49. Anycast Routing
     
-49. Object Storage
+50. Object Storage
     
-50. Distributed File Systems
+51. Distributed File Systems
     
-51. Block vs File vs Object Storage
+52. Block vs File vs Object Storage
     
-52. Data Compression
+53. Data Compression
     
-53. ACID vs BASE
+54. ACID vs BASE
     
-54. Network Partitions
+55. Network Partitions
     
-55. Split-Brain Problem
+56. Split-Brain Problem
     
-56. Heartbeats
+57. Heartbeats
     
-57. Leader Election
+58. Leader Election
     
-58. Consensus Algorithms
+59. Consensus Algorithms
     
-59. Quorum
+60. Quorum
     
-60. Paxos Algorithm
+61. Paxos Algorithm
     
-61. Raft Algorithm
+62. Raft Algorithm
     
-62. Gossip Protocol
+63. Gossip Protocol
     
-63. Clock Synchronization Problem
+64. Clock Synchronization Problem
     
-64. Logical Clocks
+65. Logical Clocks
     
-65. Lamport Timestamps
+66. Lamport Timestamps
     
-66. Vector Clocks
+67. Vector Clocks
     
-67. Distributed Transactions
+68. Distributed Transactions
     
-68. Two-Phase Commit
+69. Two-Phase Commit
     
-69. SAGA Pattern
+70. SAGA Pattern
     
-70. Outbox Pattern
+71. Outbox Pattern
     
-71. Three-Phase Commit
+72. Three-Phase Commit
     
-72. Delivery Semantics
+73. Delivery Semantics
     
-73. Change Data Capture
+74. Change Data Capture
     
-74. Long Polling
+75. Long Polling
     
-75. Server-Sent Events
+76. Server-Sent Events
+77. Webhooks,
+    
+78. WebRTC,
+    
+79. CQRS,
+    
+80. Event Sourcing,
+    
+81. Service Discovery,
+    
+82. Circuit Breaker Pattern,
+    
+83. Bulkhead Pattern,
+    
+84. Strangler Fig Pattern,
+    
+85. Backend for Frontend.
+    
+86. Sidecar Pattern,
+    
+87. Service Mesh,
+    
+88. Observability,
+    
+89. Logging,
+    
+90. Metrics,
+    
+91. Distributed Tracing,
+    
+92. Correlation IDs,
+    
+93. Full-Text Search Engine,
+    
+94. Time Series Database,
+    
+95. Vector Database,
+    
+96. Materialized Views,
+    
+97. Query Optimization,
+    
+98. Connection Pooling,
+    
+99. Cache Stampede,
+    
+100. Cache Warming,
+    
+101. PACELC Theorem,
+    
+102. Security Secrets Management,
+    
+103. Role-Based Access Control,
+    
+104. Single Sign-On,
+    
+105. Checksums,
+    
+106. Bloom Filter,
+    
+107. B-trees and B+ trees,
+    
+108. LSM Tree,
+    
+109. Merkle Tree,
+    
+110. HyperLogLog,
+    
+111. Batch vs Stream Processing,
+    
+112. ETL Pipelines,
+    
+113. MapReduce,
+    
+114. Erasure Coding.

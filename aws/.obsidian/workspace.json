@@ -25,32 +25,32 @@
             "id": "0038ddf1aa6a15d3",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "aws/.obsidian/app.json",
-                "bFile": "aws/.obsidian/app.json",
-                "aRef": ""
+                "file": "AgenticAI/LLM.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: app.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "LLM"
             }
           },
           {
             "id": "dbe9f4ee73d90193",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "DevOps/Bash/Command list.md",
-                "mode": "source",
-                "source": false
+                "aFile": "aws/DevSecOps/IAM/IAM.md",
+                "bFile": "aws/DevSecOps/IAM/IAM.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Command list"
+              "icon": "diff",
+              "title": "Diff: IAM  (Working Tree)"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -223,55 +223,55 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0038ddf1aa6a15d3",
+  "active": "dbe9f4ee73d90193",
   "lastOpenFiles": [
+    "SystemDesign/Basic Elements.md",
+    "SystemDesign/Interview Strategy.md",
+    "SystemDesign/Scaling.md",
+    "SystemDesign/Resources.md",
+    "SystemDesign/Low level.md",
+    "DevSecOps/IAM/IAM.md",
+    "DevSecOps/Authentication/JWT.md",
+    "DevSecOps/IAM",
     "AgenticAI/n8n.md",
+    "SRE/Resources.md",
+    "Devops.canvas",
+    "Kong.md",
+    "Order Management System Notes.md",
+    "Untitled.base",
+    "Welcome.md",
+    "AgenticAI/Resources.md",
+    "Algorithm/Resources.md",
+    "Algorithm/Patterns.md",
+    "Frontend/Resources.md",
+    "AgenticAI/LLM.md",
+    "DevOps/Bash/Command list.md",
+    "DevOps/Kubernetes/kubernetes-setup-guide.md",
+    "DevOps/Kubernetes/Hypervisor.md",
     "DevOps/Kubernetes/Homelab.md",
     "DevOps/Kubernetes/Homelab debug.md",
-    "DevOps/Kubernetes/Hypervisor.md",
     "DevOps/Kubernetes/Interview Q&A.md",
     "DevOps/Kubernetes/Kubernetes.md",
     "DevOps/Kubernetes/kubernetes-cni.md",
-    "DevOps/Kubernetes/kubernetes-setup-guide.md",
     "DevOps/Kubernetes/Manifest, Image & Etcd Data.md",
-    "DevOps/Kubernetes/Overview of Kubernetes CNI Network Models.md",
     "DevOps/Kubernetes/attachments/Pasted image 20260305235850.png",
-    "DevOps/Kubernetes/Etcd.md",
-    "DevOps/Kubernetes/cri-tools.md",
     "DevOps/Kubernetes/attachments/Pasted image 20260306022251.png",
-    "DevOps/Kubernetes/Control Plane.md",
     "DevOps/Kubernetes/attachments/Pasted image 20260306022130.png",
     "DevOps/Kubernetes/attachments/Pasted image 20260306021925.png",
     "DevOps/Kubernetes/attachments/Pasted image 20260306021633.png",
     "DevOps/Kubernetes/attachments/Pasted image 20260306021256.png",
-    "DevOps/Kubernetes/Communication Between API server And Pods in Worker Nodes.md",
-    "DevOps/Kubernetes/Cut for Time.md",
-    "DevOps/Kubernetes/Flannel.md",
-    "DevOps/Kubernetes/Ingress.md",
     "DevOps/Kubernetes/attachments/Pasted image 20260306014911.png",
     "DevOps/Kubernetes/attachments/Pasted image 20260306000044.png",
-    "DevOps/Bash/Command list.md",
-    "DevOps/Home lab setup (Mac).md",
-    "SystemDesign/Basic Elements.md",
     "DevOps/attachments/Pasted image 20260224021956.png",
-    "SystemDesign/Scaling.md",
-    "SystemDesign/Resources.md",
-    "SystemDesign/Low level.md",
-    "DevOps/Roadmap.md",
     "DevOps/attachments",
     "Algorithm/attachments/Pasted image 20260221034153.png",
-    "Welcome.md",
-    "Algorithm/Patterns.md",
     "Algorithm/attachments",
     "AgenticAI",
     "Frontend",
     "Algorithm",
     "SRE",
-    "Untitled.base",
     "DevOps/Bash/attachments",
-    "Devops.canvas",
     "DevSecOps/Authentication",
-    "SystemDesign",
     "Untitled 1.canvas"
   ]
 }
