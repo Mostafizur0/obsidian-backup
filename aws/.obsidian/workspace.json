@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Bash/Command list.md",
-                "mode": "source",
+                "file": "DevOps/Kubernetes/Interview Q&A.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Command list"
+              "title": "Interview Q&A"
             }
           },
           {
@@ -58,23 +58,9 @@
               "icon": "lucide-git-fork",
               "title": "Graph view"
             }
-          },
-          {
-            "id": "173637a69646f8ab",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "aws/.obsidian/workspace.json",
-                "bFile": "aws/.obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -247,13 +233,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "65e261139f06eb3c",
+  "active": "dbe9f4ee73d90193",
   "lastOpenFiles": [
+    "DevOps/Kubernetes/Ingress.md",
+    "DevOps/Kubernetes/Hypervisor.md",
+    "DevOps/Kubernetes/Overview of Kubernetes CNI Network Models.md",
+    "DevOps/Kubernetes/Manifest, Image & Etcd Data.md",
+    "DevOps/Kubernetes/kubernetes-setup-guide.md",
+    "DevOps/Kubernetes/K8s Networking.md",
+    "DevOps/Kubernetes/kubernetes-cni.md",
+    "DevOps/Kubernetes/Kubernetes.md",
+    "DevOps/Kubernetes/Interview Q&A.md",
+    "DevOps/Kubernetes/Homelab.md",
+    "DevOps/Kubernetes/Homelab debug.md",
+    "DevOps/Kubernetes/Flannel.md",
+    "DevOps/Kubernetes/Control Plane.md",
+    "DevOps/Kubernetes/Etcd.md",
+    "DevOps/Kubernetes/Cut for Time.md",
+    "DevOps/Kubernetes/cri-tools.md",
+    "DevOps/Kubernetes/Communication Between API server And Pods in Worker Nodes.md",
+    "DevOps/Docker/Speed Up Docker Build.md",
+    "DevOps/Docker/Networking.md",
+    "DevOps/Docker/Docker.md",
     "DevOps/Bash/Command list.md",
     "DevOps/Bash/Bash.md",
-    "DevOps/Docker/Docker.md",
-    "DevOps/Docker/Networking.md",
-    "DevOps/Docker/Speed Up Docker Build.md",
     "DevOps/Kubernetes/attachments/Pasted image 20260417201749.png",
     "DevOps/Kubernetes/attachments/Pasted image 20260417121312.png",
     "DevOps/API Gateway/Envoy.md",
@@ -261,25 +264,8 @@
     "DevOps/API Gateway/API Gateway.md",
     "DevOps/attachments/Pasted image 20260224021956.png",
     "Algorithm/Resources.md",
-    "Algorithm/Patterns.md",
     "Untitled.base",
-    "Welcome.md",
-    "Order Management System Notes.md",
-    "Kong.md",
     "Devops.canvas",
-    "DevOps/Kubernetes/Hypervisor.md",
-    "AgenticAI/LLM.md",
-    "DevOps/Kubernetes/kubernetes-cni.md",
-    "DevOps/Kubernetes/Kubernetes.md",
-    "DevOps/Kubernetes/K8s Networking.md",
-    "DevOps/Kubernetes/Flannel.md",
-    "DevOps/Kubernetes/cri-tools.md",
-    "DevOps/Kubernetes/Etcd.md",
-    "AgenticAI/n8n.md",
-    "SystemDesign/Basic Elements.md",
-    "SystemDesign/Interview Strategy.md",
-    "SystemDesign/Scaling.md",
-    "SystemDesign/Resources.md",
     "DevSecOps/IAM",
     "DevOps/Kubernetes/attachments/Pasted image 20260305235850.png",
     "DevOps/Kubernetes/attachments/Pasted image 20260306022251.png",

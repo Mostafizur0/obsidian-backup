@@ -1,3 +1,4 @@
+[[Control Plane]]
 In a Kubernetes cluster, there isn't one single "folder" where everything lives. Instead, data is split between the **Control Plane** (where the brain lives) and the **Nodes** (where the muscle lives).
 
 Here is the map of where your manifests and images are stored.

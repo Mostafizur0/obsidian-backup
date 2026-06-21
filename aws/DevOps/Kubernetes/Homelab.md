@@ -1,4 +1,4 @@
-
+[[Kubernetes]]
 # Building a Kubernetes Cluster on Windows 10 Using Hyper-V (With Real Troubleshooting Scenarios)
 
 This guide documents a full Kubernetes lab setup using:

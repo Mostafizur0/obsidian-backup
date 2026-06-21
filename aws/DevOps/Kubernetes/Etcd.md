@@ -1,3 +1,4 @@
+[[Kubernetes]]
 Taking an **ETCD backup** is one of the most common tasks in the CKA exam. It is a high-stakes task because if you get the paths or the certificates wrong, the backup fails, and you lose those points.
 
 Since `etcd` is a TLS-secured key-value store, you must provide the correct certificates to talk to it.

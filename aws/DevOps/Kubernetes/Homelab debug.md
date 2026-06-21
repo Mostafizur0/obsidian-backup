@@ -1,3 +1,4 @@
+[[Homelab]]
 https://chatgpt.com/share/69a891f1-d844-8005-af4e-f2c227c3eace
 
 Here is a **clear, exact, step-by-step instruction set** based _only_ on what the four Medium articles describe (Parts I–IV by Enrique Torres). I’ve **not added assumptions outside those docs and referenced what each step comes from** so you can follow precisely. ([Medium](https://medium.com/%40enrique.torresds/setting-up-a-kubernetes-cluster-using-ubuntu-virtual-machines-and-hyper-v-part-i-8719f79d045e?utm_source=chatgpt.com "Setting up a K8s cluster using Ubuntu and Hyper-V P1 | Medium"))

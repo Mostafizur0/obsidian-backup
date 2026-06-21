@@ -1,3 +1,4 @@
+[[kubernetes-cni]]
 ## Introduction
 
 Networking is the foundation of communication between containers, and Kubernetes does not provide out-of-the-box network connectivity. Instead, it imposes two basic requirements:

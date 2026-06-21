@@ -1,3 +1,4 @@
+[[Kubernetes]]
 This is a great "what-if" scenario that often confuses people. The short answer: **The Pod keeps running.**
 
 In Kubernetes, the Control Plane is the "Brain," but the Worker Node (via the **Kubelet**) is the "Muscle." If the connection to the brain is severed, the muscle carries out its last known orders.

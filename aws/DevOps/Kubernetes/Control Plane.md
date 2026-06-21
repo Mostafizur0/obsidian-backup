@@ -1,3 +1,4 @@
+[[Kubernetes]]
 https://www.wiz.io/academy/container-security/kubernetes-control-plane
 The Kubernetes control plane is the cluster’s management layer that exposes the API, stores cluster state, and continuously reconciles desired configuration—scheduling, scaling, and replacing pods as needed—to keep applications healthy and consistent across nodes.
 ## Core components of the Kubernetes control plane

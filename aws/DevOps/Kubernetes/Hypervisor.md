@@ -1,3 +1,4 @@
+[[Homelab]]
 ##### Type-1: 
 Also known as bare-metal hypervisors, these run directly on the host's hardware. They provide better performance and security.
 Microsoft Hyper-V, VMware ESXi, KVM
