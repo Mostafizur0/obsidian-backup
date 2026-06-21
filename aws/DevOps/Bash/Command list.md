@@ -28,6 +28,7 @@ https://www.digitalocean.com/community/tutorials/ls-command-in-linux-unix
 | -r    | To list files in reverse order                                                                                                                           |
 | -h    | human readable format                                                                                                                                    |
 | -a    | view hidden files                                                                                                                                        |
+
 https://medium.com/@kikuchidaisuke.zr/linux-free-command-explained-a6f2e2d311e7
 ```shell
 free -g

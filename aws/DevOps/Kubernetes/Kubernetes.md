@@ -381,3 +381,13 @@ The etcd backup process can be automated using scripts and scheduling tools. You
 
 ### [[Ingress]]
 
+## Taint And Toleration
+https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#concepts
+## Scheduling
+https://medium.com/@josip.cloud/understand-scheduling-in-kubernetes-1c7b24050638
+https://www.perfectscale.io/blog/kubernetes-scheduling#:~:text=Kubernetes%20scheduling%20is%20the%20process%20of%20assigning,or%20be%20scheduled%20on%20insufficiently%20capable%20nodes.
+![[Pasted image 20260417121312.png]]
+
+## StatefulSet
+https://www.aegissofttech.com/insights/stateful-applications-in-devops/#:~:text=Databases%2C%20message%20queues%2C%20and%20applications%20that%20need,to%20stateless%20apps%2C%20which%20make%20separate%20requests.
+https://freedium-mirror.cfd/https://blog.devops.dev/running-stateful-applications-with-kubernetes-a-complete-guide-8009d8caeeb7
