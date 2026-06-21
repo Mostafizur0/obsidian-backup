@@ -1,3 +1,4 @@
+[[Bash]]
 SSH uses a client-server architecture, where the client initiates a connection to the server and requests a secure communication channel.
 https://www.freecodecamp.org/news/ssh-meaning-in-linux/
 ```shell
