@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Kubernetes/Hypervisor.md",
+                "file": "SystemDesign/Scaling.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Hypervisor"
+              "title": "Scaling"
             }
           },
           {
@@ -60,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -233,38 +233,38 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dbe9f4ee73d90193",
+  "active": "65e261139f06eb3c",
   "lastOpenFiles": [
-    "DevOps/Kubernetes/Ingress.md",
-    "DevOps/Kubernetes/Hypervisor.md",
-    "DevOps/Kubernetes/Overview of Kubernetes CNI Network Models.md",
-    "DevOps/Kubernetes/Manifest, Image & Etcd Data.md",
-    "DevOps/Kubernetes/kubernetes-setup-guide.md",
-    "DevOps/Kubernetes/K8s Networking.md",
-    "DevOps/Kubernetes/kubernetes-cni.md",
-    "DevOps/Kubernetes/Kubernetes.md",
-    "DevOps/Kubernetes/Interview Q&A.md",
-    "DevOps/Kubernetes/Homelab.md",
-    "DevOps/Kubernetes/Homelab debug.md",
-    "DevOps/Kubernetes/Flannel.md",
-    "DevOps/Kubernetes/Control Plane.md",
-    "DevOps/Kubernetes/Etcd.md",
-    "DevOps/Kubernetes/Cut for Time.md",
-    "DevOps/Kubernetes/cri-tools.md",
-    "DevOps/Kubernetes/Communication Between API server And Pods in Worker Nodes.md",
-    "DevOps/Docker/Speed Up Docker Build.md",
-    "DevOps/Docker/Networking.md",
-    "DevOps/Docker/Docker.md",
-    "DevOps/Bash/Command list.md",
-    "DevOps/Bash/Bash.md",
+    "Welcome.md",
+    "Untitled.base",
+    "Order Management System Notes.md",
+    "Kong.md",
+    "SystemDesign/Basic Elements.md",
+    "SystemDesign/Interview Strategy.md",
+    "SystemDesign/Low level.md",
+    "SystemDesign/Resources.md",
+    "SystemDesign/Scaling.md",
+    "SystemDesign/System Design.md",
+    "SRE/Resources.md",
+    "Frontend/Resources.md",
+    "DevSecOps/IAM/IAM.md",
+    "DevSecOps/Authentication/JWT.md",
+    "DevOps/Roadmap.md",
+    "DevOps/Home lab setup (Mac).md",
+    "DevOps/Terraform/Terraform.md",
+    "DevOps/Terraform/MAC Install.md",
+    "DevOps/Terraform/Exam Guide.md",
+    "DevOps/persistent volumes/Longhorn.md",
+    "DevOps/Linux/Windows Vs Linux.md",
+    "DevOps/Load Balancer/Load Balancer.md",
+    "DevOps/Load Balancer/Network Load Balancer.md",
+    "DevOps/Linux/Troubleshooting by Layer.md",
+    "DevOps/Linux/Linux Filesystem Hierarchy (FHS).md",
+    "DevOps/Linux/Linux.md",
+    "DevOps/Linux/Isolation and Resource Control.md",
     "DevOps/Kubernetes/attachments/Pasted image 20260417201749.png",
     "DevOps/Kubernetes/attachments/Pasted image 20260417121312.png",
-    "DevOps/API Gateway/Envoy.md",
-    "DevOps/API Gateway/Api Gateway Vs Load Balancer.md",
-    "DevOps/API Gateway/API Gateway.md",
     "DevOps/attachments/Pasted image 20260224021956.png",
-    "Algorithm/Resources.md",
-    "Untitled.base",
     "Devops.canvas",
     "DevSecOps/IAM",
     "DevOps/Kubernetes/attachments/Pasted image 20260305235850.png",

@@ -1,3 +1,4 @@
+[[Linux]]
 [[Windows Vs Linux]]
 https://linuxsimply.com/linux-basics/introduction/architecture-of-linux-operating-system/
 ![[Pasted image 20260213213107.png]]

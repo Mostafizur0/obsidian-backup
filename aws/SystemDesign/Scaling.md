@@ -1,3 +1,4 @@
+[[System Design]]
 https://blog.algomaster.io/p/scaling-a-system-from-0-to-10-million-users
 https://www.designgurus.io/blog/grokking-system-design-scalability
 https://blog.bytebytego.com/p/how-google-manages-trillions-of-authorizations
