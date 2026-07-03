@@ -1,3 +1,4 @@
+https://tamimehsan.github.io/interview-questions-bangladesh/
 [[Kubernetes]]
 1. Your pod keeps getting stuck in CrashLoopBackOff, but logs show no errors. How would you approach debugging and resolution?  
   

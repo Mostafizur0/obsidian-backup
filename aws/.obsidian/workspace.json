@@ -25,14 +25,14 @@
             "id": "0038ddf1aa6a15d3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "AgenticAI/LLM.md",
-                "mode": "preview",
-                "source": false
+                "aFile": "aws/DevOps/Kubernetes/Interview Q&A.md",
+                "bFile": "aws/DevOps/Kubernetes/Interview Q&A.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "LLM"
+              "icon": "diff",
+              "title": "Diff: Interview Q&A  (Working Tree)"
             }
           },
           {
@@ -60,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -117,8 +117,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c93c8a51a4925b07",
@@ -234,12 +233,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "65e261139f06eb3c",
+  "active": "0038ddf1aa6a15d3",
   "lastOpenFiles": [
+    "AgenticAI/Resources.md",
+    "DevOps/AWS/Resources.md",
+    "AgenticAI/LLM.md",
+    "Freelance/Upwork/Resources.md",
+    "DevOps/Kubernetes/Interview Q&A.md",
+    "Freelance/Upwork",
+    "Freelance",
     "Welcome.md",
     "Untitled.base",
     "Order Management System Notes.md",
     "Kong.md",
+    "Devops.canvas",
+    "DevOps/Roadmap.md",
+    "Frontend/Resources.md",
     "SystemDesign/Basic Elements.md",
     "SystemDesign/Interview Strategy.md",
     "SystemDesign/Low level.md",
@@ -247,10 +256,8 @@
     "SystemDesign/Scaling.md",
     "SystemDesign/System Design.md",
     "SRE/Resources.md",
-    "Frontend/Resources.md",
     "DevSecOps/IAM/IAM.md",
     "DevSecOps/Authentication/JWT.md",
-    "DevOps/Roadmap.md",
     "DevOps/Home lab setup (Mac).md",
     "DevOps/Terraform/Terraform.md",
     "DevOps/Terraform/MAC Install.md",
@@ -258,15 +265,9 @@
     "DevOps/persistent volumes/Longhorn.md",
     "DevOps/Linux/Windows Vs Linux.md",
     "DevOps/Load Balancer/Load Balancer.md",
-    "DevOps/Load Balancer/Network Load Balancer.md",
-    "DevOps/Linux/Troubleshooting by Layer.md",
-    "DevOps/Linux/Linux Filesystem Hierarchy (FHS).md",
-    "DevOps/Linux/Linux.md",
-    "DevOps/Linux/Isolation and Resource Control.md",
     "DevOps/Kubernetes/attachments/Pasted image 20260417201749.png",
     "DevOps/Kubernetes/attachments/Pasted image 20260417121312.png",
     "DevOps/attachments/Pasted image 20260224021956.png",
-    "Devops.canvas",
     "DevSecOps/IAM",
     "DevOps/Kubernetes/attachments/Pasted image 20260305235850.png",
     "DevOps/Kubernetes/attachments/Pasted image 20260306022251.png",
@@ -281,8 +282,6 @@
     "Frontend",
     "Algorithm",
     "SRE",
-    "DevOps/Bash/attachments",
-    "DevSecOps/Authentication",
     "Untitled 1.canvas"
   ]
 }
