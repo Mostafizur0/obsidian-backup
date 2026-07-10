@@ -1,0 +1,7 @@
+- https://www.freelance.com/ (1)
+- https://www.upwork.com/ (1)
+- https://solidgigs.com/ (2)
+- https://www.snagajob.com/ (1)
+- https://www.linkedin.com/feed/ (1)
+- https://www.fiverr.com/ (1)
+- https://www.coolworks.com/ (1)

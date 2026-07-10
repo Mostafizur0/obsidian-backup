@@ -1,4 +1,5 @@
 [[System Design]]
+https://github.com/ashishps1/awesome-system-design-resources
 https://github.com/donnemartin/system-design-primer
 https://github.com/ByteByteGoHq/system-design-101
 https://www.systemdesignhandbook.com/blog/best-system-design-resources/
@@ -23,5 +24,9 @@ https://dev.to/somadevtoo/5-must-read-books-to-master-software-architecture-and-
 https://www.postgresql.org/docs/
 https://www.nand2tetris.org/
 https://www.hellointerview.com/
+https://newsletter.systemdesign.one/p/amazon-dynamo-architecture
+https://builder.aws.com/
 
-![System Design Map for Software Engineers](https://media.licdn.com/dms/image/v2/D4E22AQF-VMgKwaLVTg/feedshare-shrink_800/B4EZxXJqM4I0Ag-/0/1770988676170?e=1772668800&v=beta&t=z2ckuoAvDQwNaUtDQUJ1Qz4gWfbBMZAhSURBjEM_Dng)
+![System Design Map for Software Engineers|329](https://media.licdn.com/dms/image/v2/D4E22AQF-VMgKwaLVTg/feedshare-shrink_800/B4EZxXJqM4I0Ag-/0/1770988676170?e=1772668800&v=beta&t=z2ckuoAvDQwNaUtDQUJ1Qz4gWfbBMZAhSURBjEM_Dng)
+
+![[Pasted image 20260711030552.png]]
