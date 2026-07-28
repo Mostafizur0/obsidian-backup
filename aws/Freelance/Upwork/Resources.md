@@ -1,3 +1,10 @@
 https://www.upwork.com/freelancers/minhazulasifupwork
 https://chromewebstore.google.com/detail/fiverr-quick-view/ocmndficndmcfopgmekhmojikebnaggm?pli=1
 https://yaytext.com/
+https://whatminhazulasifwrite.com/upwork-client-hunt/
+https://whatminhazulasifwrite.com/online-fake-clients/
+https://whatminhazulasifwrite.com/
+https://docs.google.com/presentation/d/1GxJCg9H-iDY_izjxQUFBSQRv5lPneHRQImqlwJsKYrk/edit?slide=id.p#slide=id.p
+https://tactiq.io/tools/youtube-transcript
+https://chromewebstore.google.com/detail/tactiq-chatgpt-meeting-su/fggkaccpbmombhnjkjokndojfgagejfb
+https://docs.google.com/presentation/d/1yzhhsuvficBUOCiwqt_pSQxAoxj62MMgWgmPQyPn4B4/edit?slide=id.p#slide=id.p

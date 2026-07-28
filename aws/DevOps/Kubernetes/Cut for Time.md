@@ -6,3 +6,4 @@
 | pv           | https://longhorn.io/docs/1.10.1/deploy/install/install-with-kubectl/             |
 | pv           | https://royfactory.net/posts/cloud/2025-07-04-kubernetes-longhorn-storage-guide/ |
 | architecture | https://towardsdev.com/kubernetes-internal-architecture-deep-dive-59f150ca64f9   |
+| etcd         | https://learnkube.com/etcd-breaks-at-scale                                       |

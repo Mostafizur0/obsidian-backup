@@ -1,4 +1,10 @@
-[[Kubernetes]]
+https://etcd.io/docs/v3.6/op-guide/kubernetes/
+https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/
+https://superuser.openinfra.org/articles/a-guide-to-kubernetes-etcd-all-you-need-to-know-to-set-up-etcd-clusters/
+https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/setup-ha-etcd-with-kubeadm/
+
+https://lucaberton.com/blog/etcd-cheat-sheet-2026/
+
 Taking an **ETCD backup** is one of the most common tasks in the CKA exam. It is a high-stakes task because if you get the paths or the certificates wrong, the backup fails, and you lose those points.
 
 Since `etcd` is a TLS-secured key-value store, you must provide the correct certificates to talk to it.
@@ -191,3 +197,51 @@ chown -R 2345:2345 /var/lib/etcd-from-backup
 |**Backup**|`etcdctl snapshot save`|Needs `--cert`, `--key`, `--cacert`|
 |**Restore**|`etcdctl snapshot restore`|Needs `--data-dir`|
 |**Reboot**|`mv /etc/kubernetes/manifests`|Essential to stop/start the "brain"|
+
+## ETCDCTL commands
+ETCDCTL is the CLI tool used to interact with ETCD.ETCDCTL can interact with ETCD Server using 2 API versions – Version 2 and Version 3. By default it’s set to use Version 2. Each version has different sets of commands.
+
+For example, ETCDCTL version 2 supports the following commands:
+
+```
+etcdctl backup
+etcdctl cluster-health
+etcdctl mk
+etcdctl mkdir
+etcdctl set
+```
+
+Whereas the commands are different in version 3
+
+```
+etcdctl snapshot save
+etcdctl endpoint health
+etcdctl get
+etcdctl put
+```
+
+To set the right version of API set the environment variable ETCDCTL_API command
+
+```
+export ETCDCTL_API=3
+```
+
+When the API version is not set, it is assumed to be set to version 2. And version 3 commands listed above don’t work. When API version is set to version 3, version 2 commands listed above don’t work.
+
+Apart from that, you must also specify the path to certificate files so that ETCDCTL can authenticate to the ETCD API Server. The certificate files are available in the etcd-master at the following path. We discuss more about certificates in the security section of this course. So don’t worry if this looks complex:
+
+```
+--cacert /etc/kubernetes/pki/etcd/ca.crt
+--cert /etc/kubernetes/pki/etcd/server.crt
+--key /etc/kubernetes/pki/etcd/server.key
+```
+
+So for the commands, I showed in the previous video to work you must specify the ETCDCTL API version and path to certificate files. Below is the final form:
+
+```
+kubectl exec etcd-controlplane -n kube-system -- sh -c "ETCDCTL_API=3 etcdctl get / \
+  --prefix --keys-only --limit=10 / \
+  --cacert /etc/kubernetes/pki/etcd/ca.crt \
+  --cert /etc/kubernetes/pki/etcd/server.crt \
+  --key /etc/kubernetes/pki/etcd/server.key"
+```

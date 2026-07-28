@@ -391,3 +391,18 @@ https://www.perfectscale.io/blog/kubernetes-scheduling#:~:text=Kubernetes%20sche
 ## StatefulSet
 https://www.aegissofttech.com/insights/stateful-applications-in-devops/#:~:text=Databases%2C%20message%20queues%2C%20and%20applications%20that%20need,to%20stateless%20apps%2C%20which%20make%20separate%20requests.
 https://freedium-mirror.cfd/https://blog.devops.dev/running-stateful-applications-with-kubernetes-a-complete-guide-8009d8caeeb7
+
+## Replication Controller vs Replicaset
+https://www.geeksforgeeks.org/devops/kuberneters-difference-between-replicaset-and-replication-controller/
+
+## Replicaset
+ReplicaSets can monitor existing pods if pods are already being created.
+Say we deployed three instances of our front-end web application as three pods. We would like to create a replication controller or replica set to ensure that we have three active pods at any time. In case they were not created, the replica set will create them for you. <span style="color: green;">The role of the ReplicaSet is to monitor the pods with specified selectors and, if any of them were to fail, deploy new ones.</span> For the replica set to create a new pod the template definition section is required.
+
+## Deployment
+A Kubernetes Deployment provides key benefits over a raw ReplicaSet by enabling <span style="color: green;">rolling updates, rollbacks, paused rollouts and automated version control</span>.
+
+## Service
+![[Pasted image 20260729022222.png|236]]
+
+![[Pasted image 20260729022939.png]]
