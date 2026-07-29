@@ -32,5 +32,5 @@ https://tamimehsan.github.io/interview-questions-bangladesh/
   
 16. You're managing multi-region deployments using a single Kubernetes control plane. What architectural considerations must you address to avoid cross-region latency and single points of failure?
 17. What happend if a pod lost connection with the api server / control plane?
-18. kubectl explain, describe, edit, scale command to debug issue
+18. kubectl explain, describe, edit, replace, scale, api-resources command to debug issue
 19. 
