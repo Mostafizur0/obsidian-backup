@@ -1,8 +1,17 @@
 [[Bash]]
+Bash type
+```shell
+echo $0
+echo $SHELL
+bash --version
+```
+
 SSH uses a client-server architecture, where the client initiates a connection to the server and requests a secure communication channel.
 https://www.freecodecamp.org/news/ssh-meaning-in-linux/
 ```shell
 ssh -i <secret-key-file-path> <username>:<ip-address>
+
+ssh <username>:<ip-address/hostname>
 ```
 
 | flags | description            |
@@ -231,3 +240,20 @@ case $1 in
 esac
 ```
 https://freeacademy.ai/lessons/script-conditionals
+
+Create user with non interactive shell (for other program to use)
+```bash
+sudo useradd -s /sbin/nologin javed //RHEL / CentOS / Rocky Linux / Fedora
+sudo useradd -s /usr/sbin/nologin javed //Ubuntu / Debian
+sudo useradd -s /bin/false javed //universal
+```
+Verify the account creation
+```shell
+grep javed /etc/passwd // expected javed:x:1001:1001::/home/javed:/sbin/nologin
+```
+the output format is username, password placeholder, User ID (UID), Group ID (GID), user info, home directory, and login shell
+
+Switch user
+```bash
+sudo su - javed
+```
