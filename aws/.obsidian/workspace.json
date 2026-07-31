@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Kubernetes/Kubectl Apply Command.md",
+                "file": "DevOps/Kubernetes/Static pods.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kubectl Apply Command"
+              "title": "Static pods"
             }
           },
           {
@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Bash/Command list.md",
+                "file": "DevOps/Kubernetes/Daemon sets.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Command list"
+              "title": "Daemon sets"
             }
           }
         ],
@@ -249,42 +249,44 @@
   },
   "active": "fbe14d83b7ba0fb7",
   "lastOpenFiles": [
-    "DevOps/Kubernetes/attachments/Pasted image 20260730025041.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20260801001602.png",
+    "DevOps/Kubernetes/kubernetes-cni.md",
+    "DevOps/Kubernetes/Scheduling/Scheduling.md",
+    "DevOps/Kubernetes/Scheduling/Schedule Controll.md",
+    "DevOps/Kubernetes/Scheduling/Manual Scheduling.md",
+    "DevOps/Kubernetes/Resource Limiting.md",
+    "DevOps/Kubernetes/Daemon sets.md",
+    "DevOps/Bash/Command list.md",
+    "DevOps/Kubernetes/Static pods.md",
+    "DevOps/Kubernetes/attachments/Pasted image 20260801000833.png",
+    "DevOps/Kubernetes/Edit a POD.md",
+    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260731144720.png",
+    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260731144507.png",
+    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260731143231.png",
+    "DevOps/Kubernetes/Interview Q&A.md",
+    "DevOps/Kubernetes/Scheduling/attachments/binding.gif",
+    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260730202053.png",
+    "DevOps/Kubernetes/Scheduling/attachments/shedulers-1.gif",
+    "DevOps/Kubernetes/Overview of Kubernetes CNI Network Models.md",
+    "DevOps/Kubernetes/Manifest, Image & Etcd Data.md",
+    "DevOps/Kubernetes/kubernetes-setup-guide.md",
     "DevOps/Kubernetes/Kubernetes.md",
     "DevOps/Kubernetes/Kubectl Apply Command.md",
+    "DevOps/Kubernetes/K8s Networking.md",
+    "DevOps/Kubernetes/Ingress.md",
+    "DevOps/Kubernetes/Hypervisor.md",
+    "DevOps/Kubernetes/Homelab debug.md",
+    "DevOps/Kubernetes/Homelab.md",
+    "DevOps/Kubernetes/Flannel.md",
     "DevOps/Kubernetes/Etcd.md",
+    "DevOps/Kubernetes/Cut for Time.md",
     "DevOps/Kubernetes/cri-tools.md",
     "DevOps/Kubernetes/Control Plane.md",
-    "DevOps/Kubernetes/Communication Between API server And Pods in Worker Nodes.md",
-    "DevOps/Kubernetes/CKA links.md",
-    "DevOps/Kubernetes/Interview Q&A.md",
-    "DevOps/Bash/Command list.md",
-    "MLOps/Commands.md",
-    "MLOps/Resources.md",
-    "DevOps/Linux/Architecture.md",
-    "DevOps/Linux/Containres in Linux.md",
-    "DevOps/Linux/Isolation and Resource Control.md",
-    "DevOps/Linux/Linux.md",
-    "DevOps/Linux/Linux Filesystem Hierarchy (FHS).md",
-    "DevOps/Linux/Troubleshooting by Layer.md",
-    "DevOps/Linux/Windows Vs Linux.md",
+    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260730195818.png",
+    "DevOps/Kubernetes/Scheduling/attachments",
+    "DevOps/Kubernetes/Scheduling",
+    "DevOps/Kubernetes/attachments/Pasted image 20260730025041.png",
     "DevOps/Kubernetes/attachments/Pasted image 20260729022939.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260729022222.png",
-    "DevOps/Kubernetes/kubernetes-cni.md",
-    "DevOps/Kubernetes/kubernetes-setup-guide.md",
-    "DevOps/Kubernetes/Manifest, Image & Etcd Data.md",
-    "DevOps/Kubernetes/Overview of Kubernetes CNI Network Models.md",
-    "DevOps/Kubernetes/Cut for Time.md",
-    "DevOps/Kubernetes/attachments/c1f7ba2320f21a400298fd41e2c7ce4e.svg",
-    "DevOps/Kubernetes/attachments/Pasted image 20260728193544.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260728191745.png",
-    "DevOps/Kubernetes/attachments/20260728191745.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260728190954.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260728190355.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260728183422.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260728183128.png",
-    "SystemDesign/Interview Strategy.md",
-    "SystemDesign/API Design.md",
     "msc",
     "Jobs",
     "Devops.canvas",
@@ -295,8 +297,6 @@
     "Freelance",
     "DevSecOps/IAM",
     "DevOps/attachments",
-    "Algorithm/attachments",
-    "AgenticAI",
     "Untitled 1.canvas"
   ]
 }

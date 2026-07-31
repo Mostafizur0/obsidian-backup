@@ -33,4 +33,6 @@ https://tamimehsan.github.io/interview-questions-bangladesh/
 16. You're managing multi-region deployments using a single Kubernetes control plane. What architectural considerations must you address to avoid cross-region latency and single points of failure?
 17. What happend if a pod lost connection with the api server / control plane?
 18. kubectl explain, describe, edit, replace, scale, api-resources command to debug issue
-19. 
+19. what happend if the selector and label do not match for replicaset definition? will give an error about label mismatch
+20. Can a pod without toleration be scheduled in a tainted node? no, scheduled pod must have relevant toleration.
+21. 
