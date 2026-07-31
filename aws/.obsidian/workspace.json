@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SystemDesign/Scaling.md",
+                "file": "DevOps/Kubernetes/Scheduling/Scheduling.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scaling"
+              "title": "Scheduling"
             }
           },
           {
@@ -51,26 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Kubernetes/Static pods.md",
+                "file": "DevOps/Kubernetes/Security/Admission Control.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Static pods"
-            }
-          },
-          {
-            "id": "2e47d20a7c956e1f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevOps/Kubernetes/Daemon sets.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Daemon sets"
+              "title": "Admission Control"
             }
           }
         ],
@@ -249,24 +235,35 @@
   },
   "active": "fbe14d83b7ba0fb7",
   "lastOpenFiles": [
-    "DevOps/Kubernetes/attachments/Pasted image 20260801001602.png",
-    "DevOps/Kubernetes/kubernetes-cni.md",
+    "DevOps/Kubernetes/Security/attachments/Pasted image 20260801034252.png",
+    "DevOps/Kubernetes/Security/attachments/Pasted image 20260801034105.png",
+    "DevOps/Kubernetes/Security/attachments/Pasted image 20260801033851.png",
+    "DevOps/Kubernetes/Security/attachments/Pasted image 20260801033705.png",
+    "DevOps/Kubernetes/Security/attachments",
+    "DevOps/Kubernetes/Security/Security.md",
+    "DevOps/Kubernetes/Security/Admission Control.md",
     "DevOps/Kubernetes/Scheduling/Scheduling.md",
-    "DevOps/Kubernetes/Scheduling/Schedule Controll.md",
+    "DevOps/Kubernetes/Security",
+    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260801032124.png",
+    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260801031123.png",
+    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260801030644.png",
+    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260801024254.png",
+    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260801024135.png",
+    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260801023932.png",
+    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260801023701.png",
     "DevOps/Kubernetes/Scheduling/Manual Scheduling.md",
-    "DevOps/Kubernetes/Resource Limiting.md",
-    "DevOps/Kubernetes/Daemon sets.md",
-    "DevOps/Bash/Command list.md",
-    "DevOps/Kubernetes/Static pods.md",
-    "DevOps/Kubernetes/attachments/Pasted image 20260801000833.png",
-    "DevOps/Kubernetes/Edit a POD.md",
-    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260731144720.png",
-    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260731144507.png",
-    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260731143231.png",
+    "DevOps/Kubernetes/Scheduling/Schedule Controll.md",
+    "DevOps/Kubernetes/Priority Classes.md",
+    "SystemDesign/Scaling.md",
     "DevOps/Kubernetes/Interview Q&A.md",
-    "DevOps/Kubernetes/Scheduling/attachments/binding.gif",
-    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260730202053.png",
-    "DevOps/Kubernetes/Scheduling/attachments/shedulers-1.gif",
+    "DevOps/Kubernetes/Static pods.md",
+    "DevOps/Bash/Command list.md",
+    "DevOps/Linux/Linux.md",
+    "DevOps/Linux/Containres in Linux.md",
+    "DevOps/Kubernetes/Daemon sets.md",
+    "DevOps/Kubernetes/kubernetes-cni.md",
+    "DevOps/Kubernetes/Resource Limiting.md",
+    "DevOps/Kubernetes/Edit a POD.md",
     "DevOps/Kubernetes/Overview of Kubernetes CNI Network Models.md",
     "DevOps/Kubernetes/Manifest, Image & Etcd Data.md",
     "DevOps/Kubernetes/kubernetes-setup-guide.md",
@@ -276,17 +273,8 @@
     "DevOps/Kubernetes/Ingress.md",
     "DevOps/Kubernetes/Hypervisor.md",
     "DevOps/Kubernetes/Homelab debug.md",
-    "DevOps/Kubernetes/Homelab.md",
-    "DevOps/Kubernetes/Flannel.md",
-    "DevOps/Kubernetes/Etcd.md",
-    "DevOps/Kubernetes/Cut for Time.md",
-    "DevOps/Kubernetes/cri-tools.md",
-    "DevOps/Kubernetes/Control Plane.md",
-    "DevOps/Kubernetes/Scheduling/attachments/Pasted image 20260730195818.png",
     "DevOps/Kubernetes/Scheduling/attachments",
     "DevOps/Kubernetes/Scheduling",
-    "DevOps/Kubernetes/attachments/Pasted image 20260730025041.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260729022939.png",
     "msc",
     "Jobs",
     "Devops.canvas",
@@ -295,8 +283,6 @@
     "SystemDesign/attachments",
     "Freelance/Upwork",
     "Freelance",
-    "DevSecOps/IAM",
-    "DevOps/attachments",
     "Untitled 1.canvas"
   ]
 }
