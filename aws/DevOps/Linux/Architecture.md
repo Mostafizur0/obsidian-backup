@@ -27,7 +27,7 @@ User space runs in ring 3 (unprivileged mode). Applications call into the kernel
 [[Troubleshooting by Layer]]
 ### **What is the role of systemd in Linux?**
 
-Systemd is the init system and service manager. It starts services in parallel, manages dependencies, handles logging (journald), provides timers and sockets, and centralizes service control via systemctl.
+Systemd is the init system the first process (PID 1) and service manager. It starts services in parallel, manages dependencies, handles logging (journald), provides timers and sockets, and centralizes service control via systemctl.
 
 ### **Which filesystem should I choose: ext4, XFS, or Btrfs?**
 
