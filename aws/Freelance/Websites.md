@@ -1,3 +1,5 @@
+[[Freelance]]
+
 - https://www.freelance.com/ (1)
 - https://www.upwork.com/ (1)
 - https://solidgigs.com/ (2)

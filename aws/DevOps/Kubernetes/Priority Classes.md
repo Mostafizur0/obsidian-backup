@@ -1,3 +1,5 @@
+[[Kubernetes]]
+
 System pods always get the highest priority
 ![[Pasted image 20260801012359.png]]
 

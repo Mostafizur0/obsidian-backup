@@ -1,3 +1,5 @@
+[[Kubernetes]]
+
 https://notes.kodekloud.com/docs/Kubernetes-and-Cloud-Native-Associate-KCNA/Kubernetes-Resources/Kubectl-Apply-Command/page
 
 ![[Pasted image 20260730025041.png]]

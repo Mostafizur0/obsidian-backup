@@ -1,3 +1,5 @@
+[[Algorithm]]
+
 20 Leetcode Problems to Learn 20 Dynamic Programming Patterns:  
   
 1. Fibonacci Numbers: [https://lnkd.in/g7pbDHnX](https://lnkd.in/g7pbDHnX)  

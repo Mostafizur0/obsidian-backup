@@ -1,3 +1,5 @@
+[[Linux]]
+
 ## Users, Namespaces, and Cgroups
 Linux enforces permissions through users, groups, and ACLs. Capabilities allow granting targeted privileges (e.g., CAP_NET_ADMIN) instead of full root. Namespaces isolate resources for containers, and cgroups v2 apply CPU, memory, and I/O limits.
 

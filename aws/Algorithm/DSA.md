@@ -1,3 +1,5 @@
+[[Algorithm]]
+
 ***https://neetcode.io/ ***
 *** https://www.geeksforgeeks.org/dsa/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/ ***
 https://www.programiz.com/dsa

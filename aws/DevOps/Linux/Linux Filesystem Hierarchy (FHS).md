@@ -1,3 +1,5 @@
+[[Linux]]
+
 - / (root): top-level directory
 - /bin, /sbin: essential user and system binaries
 - /usr (unix system resources): user land programs and libraries (non-essential for early boot)

@@ -1,4 +1,5 @@
 [[System Design]]
+
 Open-Closed Principle, Dependency Injection, and Inversion of Control
 https://newsletter.francofernando.com/p/software-design-principles-that-matter
 https://blog.algomaster.io/p/solid-principles-explained-with-code

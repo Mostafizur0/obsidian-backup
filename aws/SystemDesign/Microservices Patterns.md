@@ -1,4 +1,5 @@
-  
+[[System Design]]
+
 1. ==🔍 Service Registry==: This pattern involves managing the locations of services in a distributed system. It maintains a list of all available services and their locations, which can be queried by other services to find and communicate with them.  
   
 2. ==⚡️ Circuit Breaker==: This pattern is used to prevent cascading failures in a distributed system. It monitors the availability of a service and, if it detects a failure, it can quickly isolate the problematic service and prevent other services from being affected.  

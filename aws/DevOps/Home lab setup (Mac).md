@@ -1,3 +1,5 @@
+[[Homelab]]
+
 https://github.com/Osomudeya/DevOps-Home-Lab-2026-2027
 
 By the end of this setup, you'll have:

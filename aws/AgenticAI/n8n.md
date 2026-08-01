@@ -1,3 +1,5 @@
+[[AgenticAI]]
+
 ==Install n8n==
 https://dev.to/swapnil-ahmmed-shishir/install-n8n-on-windows-with-docker-step-by-step-3dc3
 

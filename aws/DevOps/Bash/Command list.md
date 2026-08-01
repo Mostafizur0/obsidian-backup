@@ -1,4 +1,5 @@
 [[Bash]]
+
 Bash type
 ```shell
 echo $0

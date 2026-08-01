@@ -1,4 +1,5 @@
 [[Kubernetes]]
+
 https://notes.kodekloud.com/docs/Kubernetes-and-Cloud-Native-Associate-KCNA/Scheduling/DaemonSets/page
 # DaemonSets
 

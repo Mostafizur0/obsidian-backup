@@ -1,3 +1,5 @@
+[[System Design]]
+
 - Clean Architecture [Robert C. Martin](https://www.goodreads.com/author/show/45372.Robert_C_Martin) 
 ![[Pasted image 20260711012157.png]]
 - Building Microservices: Designing Fine-Grained Systems [Sam Newman](https://www.goodreads.com/author/show/3362774.Sam_Newman) ![[Pasted image 20260711012521.png]]
