@@ -251,6 +251,7 @@ sudo useradd -s /bin/false javed //universal
 Verify the account creation
 ```shell
 grep javed /etc/passwd // expected javed:x:1001:1001::/home/javed:/sbin/nologin
+id javed && grep javed /etc/passwd
 ```
 the output format is username, password placeholder, User ID (UID), Group ID (GID), user info, home directory, and login shell
 
@@ -258,3 +259,50 @@ Switch user
 ```bash
 sudo su - javed
 ```
+
+https://www.geeksforgeeks.org/linux-unix/creating-a-user-with-an-expiry-date-in-linux/
+https://man7.org/linux/man-pages/man8/useradd.8.html
+https://man7.org/linux/man-pages/man8/usermod.8.html
+Create User With an Expiry Date
+```bash
+sudo useradd -e YYYY-MM-DD username
+sudo useradd -e 2020-06-10 Test
+```
+![[Pasted image 20260802233851.png]]
+
+Add user with home directory and uid
+```bash
+sudo useradd -u 1847 -d /var/www/ammar -m ammar
+sudo usermod -u 1847 -d /var/www/ammar -m ammar //update
+```
+
+To set a new password
+```bash
+sudo passwd Test
+```
+![[Pasted image 20260802233912.png]]
+
+To verify the user account expiration details
+```bash
+sudo chage -l Test
+```
+![[Pasted image 20260802234200.png]]
+
+Force User to Change Password at Next Login. To force a user to change the user account password, the current password must have expired.
+```bash
+sudo passwd --expire username
+```
+![[Pasted image 20260802234444.png]]
+
+chage is a command-line tool that is used to update the user account aging information.
+set password expire
+```bash
+chage --lastday 0 username  
+or   
+chage -d 0 username
+```
+Set Password Expiry after X Days
+```bash
+chage -M 90 username
+```
+https://www.geeksforgeeks.org/linux-unix/how-to-force-user-to-change-password-at-next-login-in-linux/

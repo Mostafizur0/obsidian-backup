@@ -1,5 +1,10 @@
 [[Security]]
 
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Application-Developer-CKAD/Security/Admission-Controllers/page
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Application-Developer-CKAD/Security/Solution-Admission-Controllers/page
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Application-Developer-CKAD/Security/Validating-and-Mutating-Admission-Controllers/page
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Application-Developer-CKAD/Security/Solution-Validating-and-Mutating-Admission-Controllers/page
+
 ![[Pasted image 20260801033851.png]]
 
 View enabled admission control plugins
