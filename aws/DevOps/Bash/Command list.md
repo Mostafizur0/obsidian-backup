@@ -306,3 +306,18 @@ Set Password Expiry after X Days
 chage -M 90 username
 ```
 https://www.geeksforgeeks.org/linux-unix/how-to-force-user-to-change-password-at-next-login-in-linux/
+
+Disable Root Login in ssh
+```bash
+sudo vi /etc/ssh/sshd_config
+/PermitRootLogin
+PermitRootLogin no # will no affect if the line is commented out
+sudo sshd -t # check syntex error
+sudo systemctl restart sshd # restart the process
+sudo systemctl status sshd # Confirm the service restarted successfully
+sudo grep "^PermitRootLogin" /etc/ssh/sshd_config # check config persists
+ssh root@stapp01 # will fail next time
+```
+- **`ssh_config.d`**: configures the SSH **client** (outbound connections). Controls how your local machine behaves when you run the `ssh` command to connect out to other remote computers.
+
+- **`sshd_config.d`**: configures the SSH **server daemon** (inbound connections). Controls how your local machine behaves as a host when other remote users or clients attempt to connect in.

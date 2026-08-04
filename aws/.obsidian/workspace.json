@@ -59,8 +59,7 @@
               "title": "TLS secret"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -233,10 +232,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4e67fd8473d9f944",
+  "active": "bed02380a2e60d92",
   "lastOpenFiles": [
-    "DevOps/Kubernetes/Security/Admission Control.md",
     "DevOps/Kubernetes/Security/TLS secret.md",
+    "DevOps/Kubernetes/Security/Admission Control.md",
     "DevOps/Kubernetes/Scheduling/Scheduling.md",
     "DevOps/Kubernetes/Scheduling/Schedule Controll.md",
     "DevOps/Kubernetes/Scheduling/Manual Scheduling.md",
