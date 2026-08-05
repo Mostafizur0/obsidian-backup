@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Docker/Docker.md",
+                "file": "DevOps/Docker/CMD, Entrypoint, Args.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Docker"
+              "title": "CMD, Entrypoint, Args"
             }
           }
         ],
@@ -235,12 +235,20 @@
   },
   "active": "7f25f67bc5fec888",
   "lastOpenFiles": [
+    "DevOps/Docker/attachments/Pasted image 20260806033001.png",
+    "DevOps/Docker/attachments/Pasted image 20260806032855.png",
+    "DevOps/Docker/attachments/Pasted image 20260806032118.png",
+    "DevOps/Docker/attachments/Pasted image 20260806031719.png",
+    "DevOps/Docker/attachments/Pasted image 20260806031220.png",
+    "DevOps/Docker/attachments/Pasted image 20260806031109.png",
+    "DevOps/Docker/attachments",
+    "DevOps/Docker/Docker.md",
+    "DevOps/Docker/CMD, Entrypoint, Args.md",
     "DevOps/GitLab/GitLab.md",
     "DevOps/GitLab/Git Basics.md",
     "DevOps/GitLab/Commands.md",
     "DevOps/GitLab/Add a .gitignore and Untrack Committed Artifacts.md",
     "DevOps/Docker/Speed Up Docker Build.md",
-    "DevOps/Docker/Docker.md",
     "AgenticAI/Resources.md",
     "AgenticAI/AgenticAI.md",
     "AgenticAI/LLM.md",
@@ -265,13 +273,6 @@
     "DevOps/Kubernetes/Priority Classes.md",
     "DevOps/Kubernetes/Resource Limiting.md",
     "DevOps/Kubernetes/Static pods.md",
-    "DevOps/Kubernetes/Logging.md",
-    "DevOps/Kubernetes/Metrics Server.md",
-    "DevOps/Kubernetes/attachments/Pasted image 20260804162941.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260804162740.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260804162656.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260804160201.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260804160037.png",
     "DevOps/Kubernetes/Security/attachments",
     "DevOps/Kubernetes/Security",
     "DevOps/Kubernetes/Scheduling/attachments",
@@ -282,7 +283,6 @@
     "Untitled.canvas",
     "SystemDesign/attachments",
     "Freelance/Upwork",
-    "Freelance",
     "Untitled 1.canvas"
   ]
 }
