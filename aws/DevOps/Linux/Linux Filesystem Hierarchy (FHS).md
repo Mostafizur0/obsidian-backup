@@ -10,3 +10,4 @@
 - /proc, /sys: virtual filesystems exposing kernel and device state
 - /dev: device nodes
 - /run: volatile runtime data
+https://youtu.be/qvjRcZcW8CY?si=AeMezeYoPQjYmoBU
