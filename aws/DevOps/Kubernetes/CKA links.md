@@ -36,6 +36,8 @@ kubectl api-resources
 kubectl explain pods
 kubectl explain pods.spec
 kubectl explain pods --recursive
+
+kubectl exec app -- vi /log/app.log -n elastic-stack
 ```
 
 `--dry-run` By default as soon as the command is run, the resource will be created. If you simply want to test your command, use the `--dry-run=client` option. This will not create the resource; instead, it tells you whether the resource can be created and if your command is right.

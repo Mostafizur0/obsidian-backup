@@ -1,4 +1,4 @@
-[[Kubernetes]]
+[[Pod]]
 
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Application-Developer-CKAD/Core-Concepts/Docker-vs-ContainerD/page
 https://k8s.aluopy.cn/docs/reference/tools/map-crictl-dockercli/

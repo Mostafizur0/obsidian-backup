@@ -1,4 +1,4 @@
-[[Kubernetes]]
+[[Pod]]
 
 Remember, you CANNOT edit specifications of an existing POD other than the below.
 
@@ -27,6 +27,7 @@ Then create a new pod with your changes using the temporary file
 
 ```
 kubectl create -f /tmp/kubectl-edit-ccvrq.yaml
+kubectl replace --force -f /tmp/kubectl-edit-ccvrq.yaml
 ```
 
 2. The second option is to extract the pod definition in YAML format to a file using the command

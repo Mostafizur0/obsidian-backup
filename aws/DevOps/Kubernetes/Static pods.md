@@ -1,4 +1,4 @@
-[[Kubernetes]]
+[[Pod]]
 
 https://notes.kodekloud.com/docs/Kubernetes-and-Cloud-Native-Associate-KCNA/Scheduling/Static-Pods/page
 Location of static pod folder config: /var/lib/kubelet/config.yaml (kubelet config file path)

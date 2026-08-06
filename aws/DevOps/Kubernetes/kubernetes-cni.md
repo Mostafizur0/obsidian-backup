@@ -1,4 +1,4 @@
-[[Kubernetes]]
+[[K8s Networking]]
 
 **Best source (read later)**
 https://itnext.io/container-network-interface-cni-in-kubernetes-an-introduction-6cd453b622bd

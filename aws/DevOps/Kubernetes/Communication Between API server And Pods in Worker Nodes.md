@@ -1,4 +1,4 @@
-[[Kubernetes]]
+[[Control Plane]]
 
 This is a great "what-if" scenario that often confuses people. The short answer: **The Pod keeps running.**
 
