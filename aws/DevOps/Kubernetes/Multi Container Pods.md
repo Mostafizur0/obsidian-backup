@@ -1,6 +1,9 @@
 [[Pod]]
 
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Application-Developer-CKAD/Multi-Container-Pods/Multi-Container-Pods/page
+# Init containes
+An **init container** is a special container that runs **before the main containers** in a Pod. Each init container must **succeed (exit 0)** before the next one is started. Once all init containers complete, the regular containers start **simultaneously**.
+If any init container fails, the entire Pod is restarted and **all init containers are rerun from the beginning**.
 ## Multi-Container Pod Design Patterns (Dev perspective)
 
 There are three common patterns for designing multi-container pods:
@@ -16,7 +19,7 @@ https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Applicat
 ![[Pasted image 20260806174305.png]]
 
 ![[Pasted image 20260806174423.png]]
-For sidecar the init container starts before the main container, runs as long as the main container is alive and exits after the main container is dead.
+(Starting with Kubernetes v1.33) For sidecar the init container starts before the main container, runs as long as the main container is alive and exits after the main container is dead.
 ![[Pasted image 20260806174527.png]]
 Example of sidecar pattern
 ![[Pasted image 20260806174843.png]]

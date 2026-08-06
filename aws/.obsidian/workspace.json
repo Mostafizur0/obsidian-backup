@@ -49,18 +49,18 @@
             "id": "7f25f67bc5fec888",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "aws/DevOps/Kubernetes/Static pods.md",
-                "bFile": "aws/DevOps/Kubernetes/Static pods.md",
-                "aRef": ""
+                "file": "DevOps/Kubernetes/Autoscaling.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: Static pods  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Autoscaling"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -233,26 +233,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7f25f67bc5fec888",
+  "active": "65e261139f06eb3c",
   "lastOpenFiles": [
+    "DevOps/Kubernetes/Autoscaling.md",
+    "DevOps/Kubernetes/attachments/Pasted image 20260807010622.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20260807010211.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20260807005929.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20260807002603.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20260807002258.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20260807002032.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20260807001551.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20260807001033.png",
+    "DevOps/Kubernetes/Resource Limiting.md",
+    "DevOps/Kubernetes/Pod.md",
+    "DevOps/Kubernetes/Multi Container Pods.md",
+    "DevOps/Kubernetes/Edit a POD.md",
+    "DevOps/Kubernetes/Overview of Kubernetes CNI Network Models.md",
+    "DevOps/Kubernetes/Static pods.md",
     "DevOps/Kubernetes/CKA links.md",
     "DevOps/Kubernetes/Encrypting Confidential Data at Rest in ETCD.md",
     "DevOps/Docker/CMD, Entrypoint, Args.md",
-    "DevOps/Kubernetes/Edit a POD.md",
     "DevOps/Kubernetes/ConfigMaps And Secrets.md",
-    "DevOps/Kubernetes/Multi Container Pods.md",
     "DevOps/Kubernetes/attachments/Pasted image 20260806175734.png",
     "DevOps/Kubernetes/attachments/Pasted image 20260806175655.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260806174843.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260806174527.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260806174423.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260806174305.png",
-    "DevOps/Kubernetes/attachments/Pasted image 20260806174125.png",
-    "DevOps/Kubernetes/Static pods.md",
-    "DevOps/Kubernetes/Resource Limiting.md",
     "DevOps/Kubernetes/Priority Classes.md",
-    "DevOps/Kubernetes/Pod.md",
-    "DevOps/Kubernetes/Overview of Kubernetes CNI Network Models.md",
     "DevOps/Kubernetes/Metrics Server.md",
     "DevOps/Kubernetes/Manifest, Image & Etcd Data.md",
     "DevOps/Kubernetes/Logging.md",
@@ -266,11 +270,6 @@
     "DevOps/Kubernetes/Hypervisor.md",
     "DevOps/Kubernetes/Homelab debug.md",
     "DevOps/Kubernetes/Homelab.md",
-    "DevOps/Kubernetes/Flannel.md",
-    "DevOps/Kubernetes/Etcd.md",
-    "DevOps/Docker/attachments/Pasted image 20260806033001.png",
-    "DevOps/Docker/attachments/Pasted image 20260806032855.png",
-    "DevOps/Docker/attachments/Pasted image 20260806032118.png",
     "DevOps/Docker/attachments",
     "Untitled.base",
     "DevOps/Kubernetes/Security/attachments",
