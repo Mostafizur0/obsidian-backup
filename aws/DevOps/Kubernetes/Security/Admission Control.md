@@ -1,4 +1,4 @@
-[[Security]]
+[[DevOps/Kubernetes/Security/Security]]
 
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Application-Developer-CKAD/Security/Admission-Controllers/page
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Application-Developer-CKAD/Security/Solution-Admission-Controllers/page

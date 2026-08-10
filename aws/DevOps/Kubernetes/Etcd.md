@@ -6,6 +6,7 @@ https://superuser.openinfra.org/articles/a-guide-to-kubernetes-etcd-all-you-need
 https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/setup-ha-etcd-with-kubeadm/
 
 https://lucaberton.com/blog/etcd-cheat-sheet-2026/
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Cluster-Maintenance/Backup-and-Restore-Methods/page
 
 Taking an **ETCD backup** is one of the most common tasks in the CKA exam. It is a high-stakes task because if you get the paths or the certificates wrong, the backup fails, and you lose those points.
 

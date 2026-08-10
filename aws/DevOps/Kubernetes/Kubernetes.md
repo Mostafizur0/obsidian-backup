@@ -1,4 +1,7 @@
 https://github.com/hashicorp/memberlist
+## Versions
+![[Pasted image 20260807153756.png]]
+1st block all be in same version, 2nd block maintain different version and installed seperately.
 ## Local Kubernetes cluster
 https://felipetrindade.com/kubernetes-ingress-load-balancer/
 https://github.com/chipmk/docker-mac-net-connect
