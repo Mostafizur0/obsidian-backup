@@ -248,3 +248,32 @@ kubectl exec etcd-controlplane -n kube-system -- sh -c "ETCDCTL_API=3 etcdctl ge
   --cert /etc/kubernetes/pki/etcd/server.crt \
   --key /etc/kubernetes/pki/etcd/server.key"
 ```
+
+## Using `etcdutl` (File-based Backup)
+For offline file-level backup of the data directory:
+```bash
+etcdutl backup \ --data-dir /var/lib/etcd \ --backup-dir /backup/etcd-backup
+```
+
+This copies the etcd backend database and WAL files to the target location.
+### Checking Snapshot Status
+You can inspect the metadata of a snapshot file using:
+```bash
+etcdctl snapshot status /backup/etcd-snapshot.db \ --write-out=table
+```
+
+This shows details like size, revision, hash, total keys, etc. It is helpful to verify snapshot integrity before restore.
+## **Restoring ETCD**
+
+### Using `etcdutl`
+To restore a snapshot to a new data directory:
+```bash
+etcdutl snapshot restore /backup/etcd-snapshot.db \ --data-dir /var/lib/etcd-restored
+```
+
+To use a backup made with `etcdutl backup`, simply copy the backup contents back into `/var/lib/etcd` and restart etcd.
+## **Notes**
+- `etcdctl snapshot save` is used for creating `.db` snapshots from live etcd clusters.
+- `etcdctl snapshot status` provides metadata information about the snapshot file.
+- `etcdutl snapshot restore` is used to restore a `.db` snapshot file.
+- `etcdutl backup` performs a raw file-level copy of etcd’s data and WAL files without needing etcd to be running.

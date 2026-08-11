@@ -2,6 +2,10 @@
 
 https://kubernetes.io/docs/reference/kubectl/conventions/
 https://kubernetes.io/docs/reference/kubectl/generated/
+https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/
+https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/upgrading-linux-nodes/
+https://kubernetes.io/blog/2023/08/15/pkgs-k8s-io-introduction/
+https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#backing-up-an-etcd-cluster
 ```
 kubectl run nginx --image=nginx
 

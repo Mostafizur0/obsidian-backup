@@ -2,6 +2,15 @@ https://github.com/hashicorp/memberlist
 ## Versions
 ![[Pasted image 20260807153756.png]]
 1st block all be in same version, 2nd block maintain different version and installed seperately.
+Below combination of versions are supported by K8s. Only kubectl can be one (minor) version higher than kube-apiserver.
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Cluster-Maintenance/Cluster-Upgrade-Introduction/page
+Kubernetes officially supports up to the three most recent minor versions. With 1.12 as the latest, the supported versions are 1.12, 1.11, and 1.10. When version 1.13 is released, only 1.13, 1.12, and 1.11 will be supported. It is advisable to upgrade your cluster to the next release before support for your current version is dropped.An effective upgrade strategy is to upgrade one minor version at a time (e.g., upgrade from 1.10 to 1.11, then from 1.11 to 1.12, and finally from 1.12 to 1.13) rather than attempting a large jump between versions. Keep in mind that the upgrade process may vary depending on your cluster setup. Managed Kubernetes services (such as Google Kubernetes Engine) offer a simple upgrade interface, while clusters deployed using tools like kubeadm or manual installation require more hands-on management.
+
+![[Pasted image 20260810201705.png|172]]
+
+![[Pasted image 20260810201251.png]]
+
+`kubeadm` is a command-line tool that only manages cluster configuration files, certificates, and manifest definitions. It does not run or manage live application containers, so updating it has zero impact on your running workloads. So no draining or cordon of nodes needed. But node draining is mandatory for kubelet and kubectl upgrade as the control the pods, if not drained pods will die.
 ## Local Kubernetes cluster
 https://felipetrindade.com/kubernetes-ingress-load-balancer/
 https://github.com/chipmk/docker-mac-net-connect
