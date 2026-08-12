@@ -322,3 +322,17 @@ ssh root@stapp01 # will fail next time
 - **`ssh_config.d`**: configures the SSH **client** (outbound connections). Controls how your local machine behaves when you run the `ssh` command to connect out to other remote computers.
 
 - **`sshd_config.d`**: configures the SSH **server daemon** (inbound connections). Controls how your local machine behaves as a host when other remote users or clients attempt to connect in.
+
+Locate all files (excluding directories) owned by user ammar within the /home/usersdata directory on App Server 3. Copy these files while preserving the directory structure to the /ecommerce directory.
+```bash
+sudo find /home/usersdata -type f -user ammar -exec cp --parents {} /ecommerce \;
+```
+- `find /home/usersdata`: Searches inside the designated source folder.
+- `-type f`: Restricts the search results exclusively to **regular files**, omitting directories.
+- `-user ammar`: Targets only files whose owner is **ammar**.
+- `-exec ... \;`: Instructs the system to run an action on every matching file instance.
+- `cp --parents {} /ecommerce`: Copies each matching item (`{}`, which represents the path of the file found) to the destination `/ecommerce` folder while dynamically **recreating and preserving the exact parent directory structure**.
+- `{}` is a placeholder that stands for the current file name found. If the search finds a file named `/home/usersdata/documents/notes.txt`, the computer automatically turns the command into:
+	`cp --parents /home/usersdata/documents/notes.txt /ecommerce`
+	it then repeats this switch for every single file it finds.
+https://sachins-kodekloud-tasks.hashnode.dev/task-linux-user-data-transfer

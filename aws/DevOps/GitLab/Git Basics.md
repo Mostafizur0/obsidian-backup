@@ -2,6 +2,7 @@
 
 How git works
 https://www.youtube.com/watch?v=Csd4lMKPC5g
+https://www.youtube.com/watch?v=e-t-hk6KDoc
 Commands
 https://git-scm.com/docs
 https://git-scm.com/docs/git#_git_commands
