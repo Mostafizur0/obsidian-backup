@@ -20,7 +20,7 @@ https://tamimehsan.github.io/interview-questions-bangladesh/
 9. You need to deploy a service that requires TCP and UDP on the same port. How would you configure this in Kubernetes using Services and Ingress?  
   
 10. An application upgrade caused downtime even though you had rolling updates configured. What advanced strategies would you apply to ensure zero-downtime deployments next time?  
-  
+     https://dev.to/zopdev/achieve-zero-downtime-deployment-strategies-and-best-practices-36ea
 11. Your service mesh sidecar (e.g., Istio Envoy) is consuming more resources than the app itself. How do you analyze and optimize this setup?  
   
 12. You need to create a Kubernetes operator to automate complex application lifecycle events. How do you design the CRD and controller loop logic?  

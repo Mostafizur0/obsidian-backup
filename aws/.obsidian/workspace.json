@@ -49,31 +49,18 @@
             "id": "3258310d3fae69ca",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "DevOps/Kubernetes/Security/TLS secret.md",
-                "mode": "preview",
-                "source": false
+                "aFile": "aws/.obsidian/workspace.json",
+                "bFile": "aws/.obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "TLS secret"
-            }
-          },
-          {
-            "id": "813b561d5d5b0b29",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevOps/Kubernetes/Kubernetes.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Kubernetes"
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -93,7 +80,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -208,13 +197,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled"
+              "title": "Outline"
             }
           },
           {
@@ -246,38 +234,39 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bed02380a2e60d92",
+  "active": "3258310d3fae69ca",
   "lastOpenFiles": [
+    "AgenticAI/attachments/Pasted image 20260818213628.png",
     "DevOps/Kubernetes/Security/TLS secret.md",
+    "SystemDesign/Database design.md",
+    "DevOps/Kubernetes/Interview Q&A.md",
+    "AgenticAI/RAG.md",
+    "AgenticAI/attachments",
+    "AgenticAI/Resources.md",
+    "AgenticAI/n8n.md",
+    "AgenticAI/LLM.md",
+    "AgenticAI/AgenticAI.md",
+    "DevOps/Python/pyproject.toml.md",
+    "DevOps/GitOps/GitOps.md",
+    "DevOps/Kubernetes/Deployments.md",
+    "DevOps/GitLab/Runners.md",
+    "DevOps/GitLab/Add a .gitignore and Untrack Committed Artifacts.md",
+    "DevOps/GitLab/Commands.md",
+    "DevOps/GitLab/Git Basics.md",
+    "DevOps/GitLab/GitLab.md",
     "DevOps/Kubernetes/Kubernetes.md",
     "DevOps/Docker/Commands.md",
     "DevOps/Kubernetes/Homelab debug.md",
     "DevOps/Kubernetes/Homelab.md",
-    "DevOps/GitOps/GitOps.md",
     "DevOps/Docker/CMD, Entrypoint, Args.md",
     "DevOps/Docker/Docker.md",
     "DevOps/Docker/Networking.md",
     "DevOps/Docker/Speed Up Docker Build.md",
     "DevOps/Kubernetes/Etcd.md",
-    "DevOps/Python/pyproject.toml.md",
-    "DevOps/Python/Resources.md",
-    "DevOps/Python/Python.md",
-    "DevOps/GitLab/Git Basics.md",
-    "DevOps/Linux/SSH.md",
     "DevOps/Linux/attachments/Pasted image 20260812160830.png",
     "DevOps/Linux/attachments/Pasted image 20260812155809.png",
     "DevOps/Linux/attachments/Pasted image 20260812155653.png",
     "DevOps/Linux/attachments/Pasted image 20260812155129.png",
-    "DevOps/Linux/Windows Vs Linux.md",
-    "DevOps/Linux/Troubleshooting by Layer.md",
-    "DevOps/Linux/SELinux.md",
-    "DevOps/Linux/POSIX.md",
-    "DevOps/Linux/Linux Filesystem Hierarchy (FHS).md",
-    "DevOps/Linux/Linux.md",
-    "DevOps/Linux/Isolation and Resource Control.md",
-    "DevOps/Linux/Containres in Linux.md",
-    "DevOps/Linux/Architecture.md",
-    "DevOps/Linux/AppArmor.md",
     "DevOps/GitOps/attachments/Pasted image 20260812020220.png",
     "DevOps/GitOps/attachments",
     "DevOps/GitOps",
@@ -285,7 +274,6 @@
     "DevOps/Kubernetes/Security/attachments/Pasted image 20260811195753.png",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20260811175018.png",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20260811173116.png",
-    "DevOps/Kubernetes/Security/attachments/Pasted image 20260811172859.png",
     "DevOps/Docker/attachments",
     "Untitled.base",
     "DevOps/Kubernetes/Security/attachments",
@@ -293,7 +281,6 @@
     "DevOps/Kubernetes/Scheduling/attachments",
     "DevOps/Kubernetes/Scheduling",
     "msc",
-    "Jobs",
     "Devops.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas"

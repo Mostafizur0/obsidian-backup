@@ -1,5 +1,6 @@
 [[Kubernetes]]
 
+https://dev.to/zopdev/achieve-zero-downtime-deployment-strategies-and-best-practices-36ea
 # Rolling Updates and Rollbacks
 
 Welcome to this guide on managing updates and rollbacks in Kubernetes deployments. In this article, we explore key concepts such as rollouts, versioning, and various deployment strategies. We also provide practical commands to update your deployments with minimal downtime and to revert changes when necessary.
