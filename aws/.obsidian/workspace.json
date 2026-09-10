@@ -46,17 +46,17 @@
             }
           },
           {
-            "id": "3258310d3fae69ca",
+            "id": "e2fce745adf82228",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "aws/.obsidian/workspace.json",
-                "bFile": "aws/.obsidian/workspace.json",
-                "aRef": ""
+                "file": "DevOps/Interview/production-incident-07-oom-killer.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "production-incident-07-oom-killer"
             }
           }
         ],
@@ -234,8 +234,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3258310d3fae69ca",
+  "active": "e2fce745adf82228",
   "lastOpenFiles": [
+    "DevOps/Linux/Troubleshooting by Layer.md",
+    "DevOps/Interview/production-incident-07-oom-killer.md",
+    "DevOps/Interview",
     "AgenticAI/attachments/Pasted image 20260818213628.png",
     "DevOps/Kubernetes/Security/TLS secret.md",
     "SystemDesign/Database design.md",
@@ -262,7 +265,6 @@
     "DevOps/Docker/Docker.md",
     "DevOps/Docker/Networking.md",
     "DevOps/Docker/Speed Up Docker Build.md",
-    "DevOps/Kubernetes/Etcd.md",
     "DevOps/Linux/attachments/Pasted image 20260812160830.png",
     "DevOps/Linux/attachments/Pasted image 20260812155809.png",
     "DevOps/Linux/attachments/Pasted image 20260812155653.png",
@@ -280,7 +282,6 @@
     "DevOps/Kubernetes/Security",
     "DevOps/Kubernetes/Scheduling/attachments",
     "DevOps/Kubernetes/Scheduling",
-    "msc",
     "Devops.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas"
