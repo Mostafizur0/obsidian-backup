@@ -150,3 +150,34 @@ docker logs <container-id>
 ```
 ### Kubeadm Certificate path
 ![[Pasted image 20260811201052.png]]
+
+---
+# base64 -w 0
+
+> [!summary]+ Quick Definition
+> The `base64 -w 0` command **encodes data into Base64 format while disabling all line wrapping**, outputting the result as a single, continuous line of text.
+
+> [!info]- 🛠️ Command Breakdown
+> * **`base64`** :: The core Linux utility used to convert binary data or strings into printable ASCII text.
+> * **`-w` / `--wrap`** :: The flag that dictates the column width for automatic line breaks (default is usually 76 characters).
+> * **`0`** :: The value that disables line wrapping entirely.
+
+> [!abstract]- 💡 Why it Matters
+> Standard Base64 encoding inserts newline characters (`\n`). However, line breaks will break syntax or corrupt payloads when passing data into:
+> - 🐳 **Docker / Kubernetes** configuration files (e.g., `secrets.yaml`)
+> - 📋 **JSON** payloads or APIs
+> - 🖥️ **Environment variables** in shell scripts
+
+> [!example]- 🔄 Wrap Comparison
+> ### Default (No flags)
+> ```text
+> SGVsbG8gdGhpcyBpcyBhIHZlcnkgbG9uZyBzdHJpbmcgdGhhdCB3b3VsZCBub3JtYWxseSBiZSB3
+> cmFwcGVkIGJ5IHRoZSBiYXNlNjQgY29tbWFuZCBpbnRvIG11bHRpcGxlIGxpbmVzLg==
+> ```
+> 
+> ### With `-w 0`
+> ```text
+> SGVsbG8gdGhpcyBpcyBhIHZlcnkgbG9uZyBzdHJpbmcgdGhhdCB3b3VsZCBub3JtYWxseSBiZSB3cmFwcGVkIGJ5IHRoZSBiYXNlNjQgY29tbWFuZCBpbnRvIG11bHRpcGxlIGxpbmVzLg==
+> ```
+
+---
