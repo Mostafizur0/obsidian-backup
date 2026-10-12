@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/GitOps/GitOps.md",
+                "file": "DevOps/Kubernetes/Security/TLS secret.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GitOps"
+              "title": "TLS secret"
             }
           },
           {
@@ -49,14 +49,14 @@
             "id": "e2fce745adf82228",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "aws/DevOps/Kubernetes/Security/Certificate Lifecycle and api.md",
-                "bFile": "aws/DevOps/Kubernetes/Security/Certificate Lifecycle and api.md",
-                "aRef": ""
+                "file": "DevOps/Kubernetes/Security/Image Security.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: Certificate Lifecycle and api  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Image Security"
             }
           }
         ],
@@ -236,15 +236,22 @@
   },
   "active": "e2fce745adf82228",
   "lastOpenFiles": [
-    "DevOps/Kubernetes/Security/attachments/Pasted image 20261010015622.png",
-    "DevOps/Kubernetes/Security/Kubeconfig File.md",
-    "DevOps/Kubernetes/Security/Certificate Lifecycle and api.md",
-    "DevOps/GitOps/GitOps.md",
-    "DevOps/Kubernetes/Security/TLS secret.md",
-    "DevOps/Kubernetes/Security/Security.md",
     "DevOps/Kubernetes/Security/Admission Control.md",
-    "DevOps/Interview/production-incident-07-oom-killer.md",
+    "DevOps/Kubernetes/Security/Authorization.md",
+    "DevOps/Kubernetes/Security/Certificate Lifecycle and api.md",
+    "DevOps/Kubernetes/Security/Image Security.md",
+    "DevOps/Kubernetes/Security/Kubeconfig File.md",
+    "DevOps/Kubernetes/Security/Role Based Access Controls (RBAC).md",
+    "DevOps/Kubernetes/Security/Security.md",
+    "DevOps/Kubernetes/Security/Service Accounts.md",
+    "DevOps/Kubernetes/Security/TLS secret.md",
+    "DevOps/Kubernetes/Security/attachments/Pasted image 20261013011353.png",
+    "DevOps/Kubernetes/Security/attachments/Pasted image 20261012235616.png",
+    "DevOps/Kubernetes/Control Plane.md",
+    "DevOps/GitOps/GitOps.md",
     "DevOps/Python/pyproject.toml.md",
+    "DevOps/Kubernetes/Security/attachments/Pasted image 20261010015622.png",
+    "DevOps/Interview/production-incident-07-oom-killer.md",
     "DevOps/Interview/DevOps Interview.md",
     "DevOps/Kubernetes/Interview Q&A.md",
     "DevOps/Interview/prerequisites.md",
@@ -258,12 +265,8 @@
     "DevOps/GitLab/GitLab.md",
     "DevOps/GitLab/Git Basics.md",
     "DevOps/GitLab/Commands.md",
-    "DevOps/Go/Resources.md",
-    "DevOps/Go/GO Lang.md",
-    "DevOps/Linux/Troubleshooting by Layer.md",
     "DevOps/Interview",
     "AgenticAI/attachments/Pasted image 20260818213628.png",
-    "SystemDesign/Database design.md",
     "AgenticAI/attachments",
     "DevOps/Linux/attachments/Pasted image 20260812160830.png",
     "DevOps/Linux/attachments/Pasted image 20260812155809.png",
@@ -273,8 +276,6 @@
     "DevOps/GitOps/attachments",
     "DevOps/GitOps",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20260811201052.png",
-    "DevOps/Kubernetes/Security/attachments/Pasted image 20260811195753.png",
-    "DevOps/Kubernetes/Security/attachments/Pasted image 20260811175018.png",
     "DevOps/Docker/attachments",
     "Untitled.base",
     "DevOps/Kubernetes/Security/attachments",
