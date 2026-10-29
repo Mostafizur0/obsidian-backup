@@ -58,9 +58,23 @@
               "icon": "lucide-file",
               "title": "Image Security"
             }
+          },
+          {
+            "id": "2221da21b0682fd2",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "aws/Kubectl Cheat Sheet.md",
+                "bFile": "aws/Kubectl Cheat Sheet.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: Kubectl Cheat Sheet  (Working Tree)"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -234,12 +248,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e2fce745adf82228",
+  "active": "2221da21b0682fd2",
   "lastOpenFiles": [
+    "DevOps/Kubernetes/Etcd.md",
+    "DevOps/Kubernetes/Autoscaling.md",
+    "DevOps/Interview/DevOps Interview.md",
+    "MLOps/Commands.md",
+    "Kubectl Cheat Sheet.md",
+    "DevOps/Kubernetes/Debuging/pod service verification.md",
+    "DevOps/Kubernetes/Debuging/how to debug yaml error in k8s.md",
+    "DevOps/Kubernetes/Debuging/Debug Error.md",
+    "DevOps/Kubernetes/Debuging/attachments/how to debug yaml error in k8s.md",
+    "DevOps/Kubernetes/Debuging/attachments",
+    "DevOps/Kubernetes/Interview Q&A.md",
+    "DevOps/Kubernetes/Debuging",
+    "DevOps/Interview/production-incident-07-oom-killer.md",
+    "DevOps/Interview/prerequisites.md",
+    "DevOps/Kubernetes/Security/Image Security.md",
     "DevOps/Kubernetes/Security/Admission Control.md",
     "DevOps/Kubernetes/Security/Authorization.md",
     "DevOps/Kubernetes/Security/Certificate Lifecycle and api.md",
-    "DevOps/Kubernetes/Security/Image Security.md",
     "DevOps/Kubernetes/Security/Kubeconfig File.md",
     "DevOps/Kubernetes/Security/Role Based Access Controls (RBAC).md",
     "DevOps/Kubernetes/Security/Security.md",
@@ -251,20 +279,8 @@
     "DevOps/GitOps/GitOps.md",
     "DevOps/Python/pyproject.toml.md",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261010015622.png",
-    "DevOps/Interview/production-incident-07-oom-killer.md",
-    "DevOps/Interview/DevOps Interview.md",
-    "DevOps/Kubernetes/Interview Q&A.md",
-    "DevOps/Interview/prerequisites.md",
     "AgenticAI/Resources.md",
     "AgenticAI/RAG.md",
-    "AgenticAI/n8n.md",
-    "AgenticAI/LLM.md",
-    "AgenticAI/AgenticAI.md",
-    "DevOps/GitLab/Git workflows.md",
-    "DevOps/GitLab/Runners.md",
-    "DevOps/GitLab/GitLab.md",
-    "DevOps/GitLab/Git Basics.md",
-    "DevOps/GitLab/Commands.md",
     "DevOps/Interview",
     "AgenticAI/attachments/Pasted image 20260818213628.png",
     "AgenticAI/attachments",
@@ -280,8 +296,6 @@
     "Untitled.base",
     "DevOps/Kubernetes/Security/attachments",
     "DevOps/Kubernetes/Security",
-    "DevOps/Kubernetes/Scheduling/attachments",
-    "DevOps/Kubernetes/Scheduling",
     "Devops.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas"
