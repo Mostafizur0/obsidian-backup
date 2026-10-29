@@ -8,6 +8,9 @@ https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/setup-ha-e
 https://lucaberton.com/blog/etcd-cheat-sheet-2026/
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Cluster-Maintenance/Backup-and-Restore-Methods/page
 
+Backup: https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#snapshot-using-etcdctl-options
+Working for cka: https://codewithmuh.com/cka/architecture/etcd-backup-restore
+
 Taking an **ETCD backup** is one of the most common tasks in the CKA exam. It is a high-stakes task because if you get the paths or the certificates wrong, the backup fails, and you lose those points.
 
 Since `etcd` is a TLS-secured key-value store, you must provide the correct certificates to talk to it.

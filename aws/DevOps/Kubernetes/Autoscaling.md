@@ -23,3 +23,5 @@ Need to install it from k8s manifest file.
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Application-Lifecycle-Management/Vertical-Pod-Autoscaling-VPA-2025-Updates/page
 
 Kubernetes has a safety feature that prevents removing the last pod of a deployment to avoid service downtime. When you have only 1 replica and VPA tries to evict it, Kubernetes blocks this action with the error message: =="too few replicas".==
+
+Installation: https://github.com/kubernetes/autoscaler/blob/master/vertical-pod-autoscaler/docs/installation.md#install-command
