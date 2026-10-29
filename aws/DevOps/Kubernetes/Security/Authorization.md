@@ -1,14 +1,17 @@
 [[DevOps/Kubernetes/Security/Security|Security]]
 
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/Authorization/page
+
 Kubernetes supports multiple authorization mechanisms, including:
 - Node Authorization
 - Attribute-Based Authorization
 - Role-Based Access Control (RBAC)
 - Webhook Authorization
+
 Kubernetes also supports two basic authorization modes:
 - **AlwaysAllow:** Permits all requests without performing any authorization checks.
 - **AlwaysDeny:** Denies all requests.
+
 Authorization configuration example:
 ```bash
 ExecStart=/usr/local/bin/kube-apiserver \\

@@ -51,30 +51,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Kubernetes/Security/Image Security.md",
+                "file": "DevOps/Kubernetes/Security/Certificate Lifecycle and api.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Image Security"
-            }
-          },
-          {
-            "id": "2221da21b0682fd2",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "aws/Kubectl Cheat Sheet.md",
-                "bFile": "aws/Kubectl Cheat Sheet.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: Kubectl Cheat Sheet  (Working Tree)"
+              "title": "Certificate Lifecycle and api"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -248,8 +234,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2221da21b0682fd2",
+  "active": "e2fce745adf82228",
   "lastOpenFiles": [
+    "DevOps/Kubernetes/Security/Authorization.md",
+    "DevOps/Kubernetes/Security/Admission Control.md",
     "DevOps/Kubernetes/Etcd.md",
     "DevOps/Kubernetes/Autoscaling.md",
     "DevOps/Interview/DevOps Interview.md",
@@ -265,8 +253,6 @@
     "DevOps/Interview/production-incident-07-oom-killer.md",
     "DevOps/Interview/prerequisites.md",
     "DevOps/Kubernetes/Security/Image Security.md",
-    "DevOps/Kubernetes/Security/Admission Control.md",
-    "DevOps/Kubernetes/Security/Authorization.md",
     "DevOps/Kubernetes/Security/Certificate Lifecycle and api.md",
     "DevOps/Kubernetes/Security/Kubeconfig File.md",
     "DevOps/Kubernetes/Security/Role Based Access Controls (RBAC).md",
