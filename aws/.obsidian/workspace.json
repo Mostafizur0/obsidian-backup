@@ -46,17 +46,17 @@
             }
           },
           {
-            "id": "e2fce745adf82228",
+            "id": "c790522bff0cdac1",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "aws/DevOps/Kubernetes/Security/Image Security.md",
-                "bFile": "aws/DevOps/Kubernetes/Security/Image Security.md",
+                "aFile": "aws/.obsidian/workspace.json",
+                "bFile": "aws/.obsidian/workspace.json",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: Image Security  (Working Tree)"
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ],
@@ -234,7 +234,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e2fce745adf82228",
+  "active": "c790522bff0cdac1",
   "lastOpenFiles": [
     "DevOps/Kubernetes/Security/TLS secret.md",
     "DevOps/Kubernetes/Security/Certificate Lifecycle and API.md",
