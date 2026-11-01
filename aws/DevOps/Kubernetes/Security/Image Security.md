@@ -14,7 +14,7 @@ spec:
       image: private-registry.io/apps/internal-app
 ```
 
-Since Kubernetes worker nodes rely on the Docker runtime for image retrieval, they must be provided with the appropriate credentials. This is achieved by creating a Kubernetes secret of type Docker registry. Execute the following command to create the secret:
+Since Kubernetes worker nodes rely on the Docker runtime for image retrieval, they must be provided with the appropriate credentials. This is achieved by creating a ==Kubernetes secret of type Docker registry==. Execute the following command to create the secret:
 ```bash
 kubectl create secret docker-registry regcred \
   --docker-server=private-registry.io \
@@ -40,10 +40,10 @@ https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security
 When you run a Docker container, you have the flexibility to define various security parameters. For example, you can set a specific user ID or modify Linux capabilities. Consider the following Docker commands:
 ```bash
 docker run --user=1001 ubuntu sleep 3600
-docker run --cap-add MAC_ADMIN ubuntu
+docker run --cap-add MAC_ADMIN ubuntu # grants specific Linux capabilities (privileges) to a container.
 ```
   
-In Kubernetes, containers are always encapsulated in pods. You can define security settings either at the pod level, which affects all containers in the pod, or at the container level where the settings apply specifically to one container. Note that if the same security configuration is set at both the pod and container levels, the container-specific settings take precedence over the pod-level configurations.
+In Kubernetes, containers are always encapsulated in pods. ==You can define security settings either at the pod level, which affects all containers in the pod, or at the container level where the settings apply specifically to one container.== Note that if the same security configuration is set at both the pod and container levels, the container-specific settings take precedence over the pod-level configurations.
 ```yaml
 apiVersion: v1
 kind: Pod

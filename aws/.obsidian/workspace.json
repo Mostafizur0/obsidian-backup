@@ -49,14 +49,14 @@
             "id": "e2fce745adf82228",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "DevOps/Kubernetes/Security/Image Security.md",
-                "mode": "preview",
-                "source": false
+                "aFile": "aws/DevOps/Kubernetes/Security/Image Security.md",
+                "bFile": "aws/DevOps/Kubernetes/Security/Image Security.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Image Security"
+              "icon": "diff",
+              "title": "Diff: Image Security  (Working Tree)"
             }
           }
         ],
@@ -236,9 +236,15 @@
   },
   "active": "e2fce745adf82228",
   "lastOpenFiles": [
+    "DevOps/Kubernetes/Security/TLS secret.md",
     "DevOps/Kubernetes/Security/Certificate Lifecycle and API.md",
-    "DevOps/Kubernetes/Security/Authorization.md",
     "DevOps/Kubernetes/Security/Admission Control.md",
+    "DevOps/Kubernetes/Security/Service Accounts.md",
+    "DevOps/Kubernetes/Security/Security.md",
+    "DevOps/Kubernetes/Security/Role Based Access Controls (RBAC).md",
+    "DevOps/Kubernetes/Security/Kubeconfig File.md",
+    "DevOps/Kubernetes/Security/Image Security.md",
+    "DevOps/Kubernetes/Security/Authorization.md",
     "DevOps/Kubernetes/Etcd.md",
     "DevOps/Kubernetes/Autoscaling.md",
     "DevOps/Interview/DevOps Interview.md",
@@ -253,12 +259,6 @@
     "DevOps/Kubernetes/Debuging",
     "DevOps/Interview/production-incident-07-oom-killer.md",
     "DevOps/Interview/prerequisites.md",
-    "DevOps/Kubernetes/Security/Image Security.md",
-    "DevOps/Kubernetes/Security/Kubeconfig File.md",
-    "DevOps/Kubernetes/Security/Role Based Access Controls (RBAC).md",
-    "DevOps/Kubernetes/Security/Security.md",
-    "DevOps/Kubernetes/Security/Service Accounts.md",
-    "DevOps/Kubernetes/Security/TLS secret.md",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261013011353.png",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261012235616.png",
     "DevOps/Kubernetes/Control Plane.md",

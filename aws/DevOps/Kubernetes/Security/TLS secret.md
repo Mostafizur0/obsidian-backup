@@ -55,6 +55,7 @@ Summary of the Flow
 
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/TLS-in-Kubernetes-Certificate-Creation/page
 ### Generating CA Certificates
+It is cluster CA certificate that is used to sign all other cert like apiserver.crt + apiserver.key or apiserver-etcd-client.crt etc.
 ![[Pasted image 20260811195753.png]]
 
 ```bash
@@ -67,6 +68,8 @@ https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security
 ### Admin User Certificate
 ![[Pasted image 20260811172859.png]]
 ### Client and Server-Side Certificates
+https://www.qcecuring.com/blog/kubernetes-certificate-management-guide
+
 ![[Pasted image 20260811173116.png]]
 
 ![[Pasted image 20260811175018.png]]

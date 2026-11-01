@@ -21,7 +21,7 @@ curl https://192.168.56.70:6443/api -k \
 ### Automatic Mounting of Service Account Tokens
 When deploying third-party applications (such as a custom dashboard or Prometheus) on a Kubernetes cluster, you can have Kubernetes automatically mount the service account token as a volume into the Pod. This token is typically available at the path: `/var/run/secrets/kubernetes.io/serviceaccount`.
 
-Every namespace includes a default service account that is automatically injected into Pods. For example, consider the following simple Pod manifest using a custom dashboard image:
+==Every process running inside a pod needs an identity to communicate with the Kubernetes API server. This ensures pods have immediate, out-of-the-box infrastructure to authenticate their requests.== Every namespace includes a default service account that is automatically injected into Pods. For example, consider the following simple Pod manifest using a custom dashboard image:
 ```bash
 kubectl describe pod my-kubernetes-dashboard
 ```
