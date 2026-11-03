@@ -28,7 +28,7 @@
               "type": "markdown",
               "state": {
                 "file": "DevOps/Kubernetes/Custom Resource Definition (CRD).md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -250,6 +250,8 @@
   },
   "active": "dbe9f4ee73d90193",
   "lastOpenFiles": [
+    "DevOps/Kubernetes/attachments/Pasted image 20261103193116.png",
+    "DevOps/Kubernetes/attachments/Pasted image 20261103181633.png",
     "DevOps/Kubernetes/attachments/Pasted image 20261103181026.png",
     "DevOps/Kubernetes/Security/Network policies.md",
     "DevOps/Kubernetes/Custom Resource Definition (CRD).md",
@@ -262,7 +264,6 @@
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261103140546.png",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261103132336.png",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261103125146.png",
-    "DevOps/Kubernetes/Security/attachments/Pasted image 20261103124832.png",
     "DevOps/Kubernetes/Security/Image Security.md",
     "DevOps/Kubernetes/Security/Service Accounts.md",
     "DevOps/Kubernetes/Security/Role Based Access Controls (RBAC).md",
@@ -286,7 +287,6 @@
     "DevOps/Kubernetes/Debuging",
     "DevOps/Interview/production-incident-07-oom-killer.md",
     "DevOps/Interview/prerequisites.md",
-    "DevOps/Kubernetes/Security/attachments/Pasted image 20261013011353.png",
     "DevOps/Kubernetes/Control Plane.md",
     "DevOps/Interview",
     "AgenticAI/attachments",
