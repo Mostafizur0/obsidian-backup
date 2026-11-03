@@ -1,6 +1,7 @@
 [[DevOps/Kubernetes/Security/Security|Security]]
 
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/Image-Security/page
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/Prerequisite-Security-in-Docker/page
 ## Configuring Kubernetes Pods for Private Registries
 To pull an image from a private registry within a pod, specify the full image path in your pod definition. For example:
 ```yaml
@@ -37,6 +38,7 @@ spec:
 ```
 # Security Contexts
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/Security-Contexts/page
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/Lab-Solution-Security-Contexts/page
 When you run a Docker container, you have the flexibility to define various security parameters. For example, you can set a specific user ID or modify Linux capabilities. Consider the following Docker commands:
 ```bash
 docker run --user=1001 ubuntu sleep 3600

@@ -64,6 +64,8 @@ openssl req -new -key ca.key -subj "/CN=KUBERNETES-CA" -out ca.csr
 openssl x509 -req -in ca.csr -signkey ca.key -out ca.crt
 ```
 
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/Certificates-API/page
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/Lab-Solution-Certificates-API/page
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/View-Certificate-Details/page
 ### Admin User Certificate
 ![[Pasted image 20260811172859.png]]
@@ -153,7 +155,7 @@ docker logs <container-id>
 ```
 ### Kubeadm Certificate path
 ![[Pasted image 20260811201052.png]]
-
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/Lab-Solution-View-Certification-Details/page
 ---
 # base64 -w 0
 

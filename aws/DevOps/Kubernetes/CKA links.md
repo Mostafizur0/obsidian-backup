@@ -6,7 +6,20 @@ https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/
 https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/upgrading-linux-nodes/
 https://kubernetes.io/blog/2023/08/15/pkgs-k8s-io-introduction/
 https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#backing-up-an-etcd-cluster
+https://kubernetes.io/docs/tasks/administer-cluster/certificates/
+https://kubernetes.io/docs/tasks/tls/certificate-issue-client-csr/
+https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#launch-a-pod-using-service-account-token-projection
 ```
+export KUBECONFIG="${KUBECONFIG}:config-demo:config-demo-2"
+
+kubectl config view
+kubectl config --kubeconfig=config-demo view --minify // view current context
+kubectl config --kubeconfig=config-demo use-context research
+
+alias k=kubectl
+export d="--dry-run=client -o yaml"
+export now="--force --grace-period 0"
+
 kubectl run nginx --image=nginx
 
 kubectl run nginx --image=nginx --dry-run=client -o yaml
@@ -42,6 +55,18 @@ kubectl explain pods.spec
 kubectl explain pods --recursive
 
 kubectl exec app -- vi /log/app.log -n elastic-stack
+
+openssl x509 -in /etc/kubernetes/pki/etcd/server.crt -text -noout
+
+crictl ps -a
+
+crictl logs <contaier-id>
+
+k get rolebindings -n kube-system -o wide | grep <role-name>
+
+ps -aux | grep authorization // linux processes with startup commands
+
+kubectl get pods -A --no-headers | wc -l // no. of pods in all ns
 ```
 
 `--dry-run` By default as soon as the command is run, the resource will be created. If you simply want to test your command, use the `--dry-run=client` option. This will not create the resource; instead, it tells you whether the resource can be created and if your command is right.

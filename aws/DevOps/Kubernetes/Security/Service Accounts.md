@@ -1,6 +1,7 @@
 [[DevOps/Kubernetes/Security/Security|Security]]
 
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/Service-Accounts/page
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/Lab-Solution-Service-Accounts/page
 There are two main types of accounts in Kubernetes:
 - **User Accounts:** Designed for human users like administrators or developers.
 - **Service Accounts:** Intended for machine-to-machine interactions or application-specific tasks. For instance, monitoring tools like Prometheus use a service account to query the Kubernetes API for performance metrics, while Jenkins uses one for deploying applications.
