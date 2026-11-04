@@ -1,5 +1,6 @@
 [[Storage]]
 
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Storage/Lab-Solution-Storage-Class/page
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Storage/Storage-Class/page
 ![[Pasted image 20261104221926.png]]
 
