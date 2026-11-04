@@ -145,6 +145,31 @@ kubectl create -f pvc-definition.yaml
 kubectl get pvc
 # or target the claim directly:
 kubectl get pvc myclaim
+
+kubectl delete pvc myclaim
 ```
 
 ### Deleting a PVC and reclaim policy behavior
+What happens to the underlying PV depends on its `persistentVolumeReclaimPolicy`. Common policies:
+
+| Reclaim Policy | What happens                                                                                      | Notes                                                                                                                                                           |
+| -------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Retain`       | PV object and the underlying storage remain; PV is not automatically available for new claims.    | Manual administrator intervention is required to reuse or delete the volume. <span style="color: #22C55E;">This is the safe default for many static PVs.</span> |
+| `Delete`       | The underlying storage (cloud volume or provisioned resource) is deleted when the PVC is deleted. | Supported when the <span style="color: #22C55E;">PV was dynamically provisioned and the provisioner supports deletion (e.g., via CSI).</span>                   |
+| `Recycle`      | Attempted simple file-level scrub (deprecated).                                                   | Deprecated — did not provide secure/portable cleanup across volume types.                                                                                       |
+> [!NOTE]
+> Recycle is deprecated. Use dynamic provisioning with StorageClasses and CSI drivers for provider-supported lifecycle and cleanup operations instead of relying on the old recycle behavior.
+### Why `recycle` was deprecated
+- The old recycler performed a best-effort file delete and could not guarantee secure erasure.
+- It did not handle snapshots, provider metadata, or encrypted volumes correctly.
+- It worked only for some in-tree volume plugins.
+- Proper cleanup typically requires unmount/detach, filesystem reformat, snapshot handling, or provider-level deletes — operations the recycler did not perform reliably.
+## Recommended modern approach
+Use StorageClasses and CSI drivers for dynamic provisioning and lifecycle management:
+- StorageClasses let Kubernetes dynamically create PVs with specified parameters.
+- CSI drivers (or cloud provisioners) handle creation, deletion, and advanced lifecycle operations such as snapshots, encryption, and resizing.
+- Dynamic provisioning avoids manual PV creation and reduces administrative overhead.
+## Quick reference & next steps
+- Use a selector if you must bind a PVC to a specific PV by label.
+- Prefer dynamic provisioning via StorageClass + CSI for cloud or production workloads.
+- Inspect `kubectl get pv,pvc` and `kubectl describe pv <name>` / `kubectl describe pvc <name>` when troubleshooting binding problems.
