@@ -9,6 +9,8 @@ https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#back
 https://kubernetes.io/docs/tasks/administer-cluster/certificates/
 https://kubernetes.io/docs/tasks/tls/certificate-issue-client-csr/
 https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#launch-a-pod-using-service-account-token-projection
+https://kubernetes.io/docs/tutorials/configuration/configure-persistent-volume-storage/
+
 ```
 export KUBECONFIG="${KUBECONFIG}:config-demo:config-demo-2"
 

@@ -1,6 +1,8 @@
 [[Storage]]
 
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Storage/Lab-Solution-Persistent-Volumes-and-Persistent-Volume-Claims-optional/page
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Storage/Volumes/page
+![[Pasted image 20261104221616.png]]
 Note that not all Kubernetes volume types are persistent—<span style="color: #22C55E;">`emptyDir`, for example, is ephemeral and deleted when the pod is removed.</span> To retain data beyond a pod’s lifetime, use a backing store that persists independently of the pod: <span style="color: #22C55E;">e.g., `hostPath` (node filesystem), network-backed storage (NFS, GlusterFS, CephFS), cloud block/file storage (AWS EBS, Azure Disk/File, GCP PD), or Kubernetes PersistentVolumes (PV) provisioned via a CSI driver.</span>
 
 The example below uses a host directory (`/data`) on the node as the backing storage and mounts it at `/opt` inside the container. Anything written to `/opt` is stored on the node under `/data`.
@@ -173,3 +175,5 @@ Use StorageClasses and CSI drivers for dynamic provisioning and lifecycle manage
 - Use a selector if you must bind a PVC to a specific PV by label.
 - Prefer dynamic provisioning via StorageClass + CSI for cloud or production workloads.
 - Inspect `kubectl get pv,pvc` and `kubectl describe pv <name>` / `kubectl describe pvc <name>` when troubleshooting binding problems.
+
+[[Storage Class]]
