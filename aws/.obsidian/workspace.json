@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Kubernetes/Storage/Container Storage Interface (CSI).md",
+                "file": "DevOps/Kubernetes/Storage/Volumes.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Container Storage Interface (CSI)"
+              "title": "Volumes"
             }
           }
         ],
@@ -251,6 +251,7 @@
   "active": "1e7e60d394fd2637",
   "lastOpenFiles": [
     "DevOps/Docker/Docker Storage.md",
+    "DevOps/Kubernetes/Storage/Volumes.md",
     "DevOps/Kubernetes/Storage/Container Storage Interface (CSI).md",
     "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104020323.png",
     "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104020320.png",
