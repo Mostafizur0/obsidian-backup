@@ -391,7 +391,7 @@ The etcd backup process can be automated using scripts and scheduling tools. You
 
 ### [[Longhorn]]
 
-### [[Ingress]]
+### [[DevOps/Kubernetes/Ingress]]
 
 ## Taint And Toleration
 https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#concepts

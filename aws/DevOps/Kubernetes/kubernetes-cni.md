@@ -5,6 +5,8 @@ https://itnext.io/container-network-interface-cni-in-kubernetes-an-introduction-
 https://www.linkedin.com/pulse/demystifying-kubernetes-networking-deep-dive-cni-services-dilhan-trhwc
 https://www.srodi.com/posts/kubernetes-networking-series-part-2
 https://ronaknathani.com/blog/2020/08/how-a-kubernetes-pod-gets-an-ip-address/
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Networking/Prerequisite-CNI/page
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Networking/CNI-in-kubernetes/page
 ![[Pasted image 20260417201749.png]]
 
 

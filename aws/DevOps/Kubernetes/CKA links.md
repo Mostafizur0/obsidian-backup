@@ -69,6 +69,8 @@ k get rolebindings -n kube-system -o wide | grep <role-name>
 ps -aux | grep authorization // linux processes with startup commands
 
 kubectl get pods -A --no-headers | wc -l // no. of pods in all ns
+
+kubectl exec <pod> -- <bash-command>
 ```
 
 `--dry-run` By default as soon as the command is run, the resource will be created. If you simply want to test your command, use the `--dry-run=client` option. This will not create the resource; instead, it tells you whether the resource can be created and if your command is right.
