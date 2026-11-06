@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Kubernetes/Designing a Kubernetes Cluster/Designing a Kubernetes Cluster.md",
+                "file": "DevOps/Kubernetes/Designing a Kubernetes Cluster/High Availability.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Designing a Kubernetes Cluster"
+              "title": "High Availability"
             }
           }
         ],
@@ -250,11 +250,18 @@
   },
   "active": "1e7e60d394fd2637",
   "lastOpenFiles": [
-    "DevOps/Kubernetes/Networking/Gateway API.md",
     "DevOps/Kubernetes/Designing a Kubernetes Cluster/Designing a Kubernetes Cluster.md",
+    "DevOps/Kubernetes/Designing a Kubernetes Cluster/High Availability.md",
+    "DevOps/Kubernetes/CKA links.md",
+    "DevOps/Kubernetes/Designing a Kubernetes Cluster/attachments/Pasted image 20261107014257.png",
+    "DevOps/Kubernetes/Designing a Kubernetes Cluster/attachments/Pasted image 20261107014141.png",
+    "DevOps/Kubernetes/Designing a Kubernetes Cluster/attachments/Pasted image 20261107014008.png",
+    "DevOps/Kubernetes/Designing a Kubernetes Cluster/attachments/Pasted image 20261107013739.png",
+    "DevOps/Kubernetes/Designing a Kubernetes Cluster/attachments/Pasted image 20261107013558.png",
+    "DevOps/Kubernetes/Designing a Kubernetes Cluster/attachments",
+    "DevOps/Kubernetes/Networking/Gateway API.md",
     "DevOps/Kubernetes/Designing a Kubernetes Cluster",
     "DevOps/Kubernetes/Networking/Ingress.md",
-    "DevOps/Kubernetes/CKA links.md",
     "DevOps/Kubernetes/Networking/DNS.md",
     "DevOps/Kubernetes/Networking/Service Networking.md",
     "DevOps/Kubernetes/Networking/IP Address Management (IPAM).md",
@@ -279,23 +286,15 @@
     "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104221926.png",
     "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104221616.png",
     "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104221545.png",
-    "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104020323.png",
-    "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104020320.png",
     "DevOps/Kubernetes/Storage/attachments",
     "DevOps/Kubernetes/Security/Security.md",
     "DevOps/Kubernetes/Security/Network policies.md",
     "DevOps/Kubernetes/Storage",
-    "DevOps/Docker/attachments/Pasted image 20261104014453.png",
     "DevOps/Docker/Layered Architecture.md",
-    "DevOps/Docker/attachments/Pasted image 20261104013013.png",
-    "DevOps/Docker/attachments/Pasted image 20261104012410.png",
     "DevOps/Docker/Docker.md",
-    "DevOps/Python/pyproject.toml.md",
-    "DevOps/Docker/CMD, Entrypoint, Args.md",
     "DevOps/Kubernetes/Debuging/attachments",
     "DevOps/Kubernetes/Debuging",
     "DevOps/Interview",
-    "AgenticAI/attachments",
     "Devops.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas"

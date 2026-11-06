@@ -1,5 +1,7 @@
 [[Kubernetes]]
 
+https://github.com/kodekloudhub/certified-kubernetes-administrator-course
+https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 https://kubernetes.io/docs/reference/kubectl/conventions/
 https://kubernetes.io/docs/reference/kubectl/generated/
 https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/
