@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Kubernetes/Helm/Commands.md",
+                "file": "DevOps/Kubernetes/Kustomize/Kustomize.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Commands"
+              "title": "Kustomize"
             }
           }
         ],
@@ -250,8 +250,10 @@
   },
   "active": "1e7e60d394fd2637",
   "lastOpenFiles": [
-    "DevOps/Kubernetes/Helm/Helm.md",
     "DevOps/Kubernetes/Helm/Commands.md",
+    "DevOps/Kubernetes/Kustomize/Kustomize.md",
+    "DevOps/Kubernetes/Kustomize",
+    "DevOps/Kubernetes/Helm/Helm.md",
     "DevOps/Kubernetes/Helm/attachments/Pasted image 20261107165040.png",
     "DevOps/Kubernetes/Helm/attachments",
     "DevOps/Kubernetes/Designing a Kubernetes Cluster/High Availability.md",
@@ -294,8 +296,6 @@
     "DevOps/Kubernetes/Security/Security.md",
     "DevOps/Kubernetes/Security/Network policies.md",
     "DevOps/Kubernetes/Storage",
-    "DevOps/Docker/Layered Architecture.md",
-    "DevOps/Kubernetes/Debuging/attachments",
     "Devops.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas"
