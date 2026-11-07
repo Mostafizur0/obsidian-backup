@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Kubernetes/Designing a Kubernetes Cluster/High Availability.md",
+                "file": "DevOps/Kubernetes/Helm/Commands.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "High Availability"
+              "title": "Commands"
             }
           }
         ],
@@ -250,8 +250,13 @@
   },
   "active": "1e7e60d394fd2637",
   "lastOpenFiles": [
-    "DevOps/Kubernetes/Designing a Kubernetes Cluster/Designing a Kubernetes Cluster.md",
+    "DevOps/Kubernetes/Helm/Helm.md",
+    "DevOps/Kubernetes/Helm/Commands.md",
+    "DevOps/Kubernetes/Helm/attachments/Pasted image 20261107165040.png",
+    "DevOps/Kubernetes/Helm/attachments",
     "DevOps/Kubernetes/Designing a Kubernetes Cluster/High Availability.md",
+    "DevOps/Kubernetes/Helm",
+    "DevOps/Kubernetes/Designing a Kubernetes Cluster/Designing a Kubernetes Cluster.md",
     "DevOps/Kubernetes/CKA links.md",
     "DevOps/Kubernetes/Designing a Kubernetes Cluster/attachments/Pasted image 20261107014257.png",
     "DevOps/Kubernetes/Designing a Kubernetes Cluster/attachments/Pasted image 20261107014141.png",
@@ -285,16 +290,12 @@
     "DevOps/Docker/Docker Storage.md",
     "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104221926.png",
     "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104221616.png",
-    "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104221545.png",
     "DevOps/Kubernetes/Storage/attachments",
     "DevOps/Kubernetes/Security/Security.md",
     "DevOps/Kubernetes/Security/Network policies.md",
     "DevOps/Kubernetes/Storage",
     "DevOps/Docker/Layered Architecture.md",
-    "DevOps/Docker/Docker.md",
     "DevOps/Kubernetes/Debuging/attachments",
-    "DevOps/Kubernetes/Debuging",
-    "DevOps/Interview",
     "Devops.canvas",
     "Untitled.canvas",
     "Untitled 1.canvas"
