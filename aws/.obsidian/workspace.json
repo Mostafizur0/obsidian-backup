@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Kubernetes/Kustomize/Kustomize.md",
+                "file": "DevOps/Kubernetes/Debuging/JSON Path.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kustomize"
+              "title": "JSON Path"
             }
           }
         ],
@@ -250,8 +250,11 @@
   },
   "active": "1e7e60d394fd2637",
   "lastOpenFiles": [
-    "DevOps/Kubernetes/Helm/Commands.md",
+    "DevOps/Kubernetes/Debuging/how to debug yaml error in k8s.md",
+    "DevOps/Kubernetes/Debuging/Debug Error.md",
+    "DevOps/Kubernetes/Debuging/JSON Path.md",
     "DevOps/Kubernetes/Kustomize/Kustomize.md",
+    "DevOps/Kubernetes/Helm/Commands.md",
     "DevOps/Kubernetes/Kustomize",
     "DevOps/Kubernetes/Helm/Helm.md",
     "DevOps/Kubernetes/Helm/attachments/Pasted image 20261107165040.png",
@@ -289,12 +292,9 @@
     "DevOps/Kubernetes/Storage/Container Storage Interface (CSI).md",
     "DevOps/Kubernetes/Storage/Storage.md",
     "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104222311.png",
-    "DevOps/Docker/Docker Storage.md",
     "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104221926.png",
     "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104221616.png",
     "DevOps/Kubernetes/Storage/attachments",
-    "DevOps/Kubernetes/Security/Security.md",
-    "DevOps/Kubernetes/Security/Network policies.md",
     "DevOps/Kubernetes/Storage",
     "Devops.canvas",
     "Untitled.canvas",
