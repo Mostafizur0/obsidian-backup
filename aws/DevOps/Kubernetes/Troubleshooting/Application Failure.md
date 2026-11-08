@@ -1,6 +1,7 @@
 [[Troubleshooting]]
 
 https://kubernetes.io/docs/tasks/debug/debug-application/debug-pods/
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Troubleshooting/Lab-Solution-Application-Failure/page
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Troubleshooting/Application-Failure/page
 A concise troubleshooting workflow to diagnose Kubernetes application failures by checking user endpoints, Services, pods, logs, and datastore, with commands and common pitfalls.
 Before you run commands, draw a small topology diagram showing how components connect (user → web Service → web Pod → DB Service → DB Pod). This reduces guesswork and helps decide whether to begin at the frontend or backend based on symptoms.

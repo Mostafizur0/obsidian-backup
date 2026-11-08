@@ -15,6 +15,7 @@ https://kubernetes.io/docs/tutorials/configuration/configure-persistent-volume-s
 https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/
 https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kubectl-patch/
 https://kubernetes.io/docs/tasks/debug/
+https://kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/
 
 ```
 export KUBECONFIG="${KUBECONFIG}:config-demo:config-demo-2"

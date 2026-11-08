@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Kubernetes/Troubleshooting/Application Failure.md",
+                "file": "DevOps/Kubernetes/Troubleshooting/Worker Node Failure.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Application Failure"
+              "title": "Worker Node Failure"
             }
           }
         ],
@@ -250,9 +250,11 @@
   },
   "active": "1e7e60d394fd2637",
   "lastOpenFiles": [
-    "DevOps/Kubernetes/Troubleshooting/Troubleshooting.md",
-    "DevOps/Kubernetes/Troubleshooting/Application Failure.md",
     "DevOps/Kubernetes/CKA links.md",
+    "DevOps/Kubernetes/Troubleshooting/Worker Node Failure.md",
+    "DevOps/Kubernetes/Troubleshooting/Control Plane Failure.md",
+    "DevOps/Kubernetes/Troubleshooting/Application Failure.md",
+    "DevOps/Kubernetes/Troubleshooting/Troubleshooting.md",
     "DevOps/Kubernetes/Troubleshooting/how to debug yaml error in k8s.md",
     "DevOps/Kubernetes/Troubleshooting/pod service verification.md",
     "DevOps/Kubernetes/Troubleshooting/JSON Path.md",
@@ -288,9 +290,7 @@
     "DataEngineering",
     "DevOps/Kubernetes/Networking/attachments/Pasted image 20261105012101.png",
     "DevOps/Kubernetes/Networking/attachments",
-    "DevOps/Kubernetes/Storage/Storage Class.md",
     "DevOps/Kubernetes/Networking",
-    "DevOps/Kubernetes/Storage/Volumes.md",
     "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104222311.png",
     "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104221926.png",
     "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104221616.png",
