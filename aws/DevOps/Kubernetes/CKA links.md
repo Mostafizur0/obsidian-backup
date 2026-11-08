@@ -12,6 +12,8 @@ https://kubernetes.io/docs/tasks/administer-cluster/certificates/
 https://kubernetes.io/docs/tasks/tls/certificate-issue-client-csr/
 https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#launch-a-pod-using-service-account-token-projection
 https://kubernetes.io/docs/tutorials/configuration/configure-persistent-volume-storage/
+https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/
+https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kubectl-patch/
 
 ```
 export KUBECONFIG="${KUBECONFIG}:config-demo:config-demo-2"

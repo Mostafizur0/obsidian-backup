@@ -1,5 +1,6 @@
 [[Kubernetes]]
 
+https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Kustomize-Basics-2025-Updates/Kustomize-Problem-Statement-and-Ideology/page
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Kustomize-Basics-2025-Updates/Kustomize-vs-Helm/page
 Install - https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Kustomize-Basics-2025-Updates/InstallationSetup/page
