@@ -14,6 +14,7 @@ https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-accou
 https://kubernetes.io/docs/tutorials/configuration/configure-persistent-volume-storage/
 https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/
 https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kubectl-patch/
+https://kubernetes.io/docs/tasks/debug/
 
 ```
 export KUBECONFIG="${KUBECONFIG}:config-demo:config-demo-2"

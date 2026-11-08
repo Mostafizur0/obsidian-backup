@@ -1,4 +1,4 @@
-[[Debug Error]]
+[[Troubleshooting]]
 
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Other-Topics/JSON-Path-in-Kubernetes/page
 ```json

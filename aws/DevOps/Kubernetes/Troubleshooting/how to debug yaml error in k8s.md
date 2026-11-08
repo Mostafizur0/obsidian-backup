@@ -1,4 +1,4 @@
-[[Debug Error]]
+[[Troubleshooting]]
 
 Debugging a YAML error in Kubernetes depends on where the failure occurs: **client-side validation** (syntax errors), **server-side validation** (schema/API errors), or **runtime configuration** (logical errors). [1]
 

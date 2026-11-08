@@ -1,4 +1,4 @@
-[[Debug Error]]
+[[Troubleshooting]]
 
 # How to Verify a Pod is Exposed to a Service Using kubectl
 
