@@ -16,9 +16,12 @@ https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/
 https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kubectl-patch/
 https://kubernetes.io/docs/tasks/debug/
 https://kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/
+https://kubernetes.io/docs/reference/config-api/kube-proxy-config.v1alpha1/
 
 ```
 export KUBECONFIG="${KUBECONFIG}:config-demo:config-demo-2"
+
+ps -ef | grep kubelet | grep config // view kubelet config file
 
 kubectl config view
 kubectl config --kubeconfig=config-demo view --minify // view current context
