@@ -5,7 +5,7 @@ https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security
 Kubernetes supports multiple authorization mechanisms, including:
 - Node Authorization
 - Attribute-Based Authorization
-- Role-Based Access Control (RBAC)
+- Role-Based Access Control (RBAC) - main mechanisms [[Role Based Access Controls (RBAC)]]
 - Webhook Authorization
 
 Kubernetes also supports two basic authorization modes:
