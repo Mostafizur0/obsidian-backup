@@ -13,14 +13,25 @@ kubectl describe serviceaccount dashboard-sa
 kubectl describe secret dashboard-sa-token-kbbdm // to view the token
 ```
 
-Token can be used as bearer for requesting to the k8s api
+```yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: my-app-sa
+  namespace: default
+```
+
+When a service account is created, Kubernetes automatically generates a token and stores it as a Secret object. This token is then used by your application as bearer for requesting to the k8s api (API authentication).
 ```curl
 curl https://192.168.56.70:6443/api -k \
 --header "Authorization: Bearer eyJhbgG…"
 ```
 
+![[Pasted image 20261118030741.png]]
 ### Automatic Mounting of Service Account Tokens
 When deploying third-party applications (such as a custom dashboard or Prometheus) on a Kubernetes cluster, you can have Kubernetes automatically mount the service account token as a volume into the Pod. This token is typically available at the path: `/var/run/secrets/kubernetes.io/serviceaccount`.
+
+![[Pasted image 20261118031734.png|204]]
 
 ==Every process running inside a pod needs an identity to communicate with the Kubernetes API server. This ensures pods have immediate, out-of-the-box infrastructure to authenticate their requests.== Every namespace includes a default service account that is automatically injected into Pods. For example, consider the following simple Pod manifest using a custom dashboard image:
 ```bash
