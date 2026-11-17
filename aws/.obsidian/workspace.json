@@ -74,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -248,8 +248,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1e7e60d394fd2637",
+  "active": "c790522bff0cdac1",
   "lastOpenFiles": [
+    "DevOps/Kubernetes/Security/Security.md",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261110020006.png",
     "DevOps/Kubernetes/Troubleshooting/Network Troubleshooting.md",
     "DevOps/Kubernetes/CKA links.md",
@@ -293,7 +294,6 @@
     "DevOps/Kubernetes/Networking",
     "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104222311.png",
     "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104221926.png",
-    "DevOps/Kubernetes/Storage/attachments/Pasted image 20261104221616.png",
     "DevOps/Kubernetes/Storage/attachments",
     "DevOps/Kubernetes/Storage",
     "Devops.canvas",

@@ -49,7 +49,7 @@ kubectl create deployment nginx --image=nginx --replicas=4
 
 kubectl scale
 
-kubectl scale deployment nginx--replicas=4
+kubectl scale deployment nginx --replicas=4
 
 kubectl expose pod redis --port=6379 --name redis-service --dry-run=client -o yaml
 
@@ -66,6 +66,7 @@ kubectl explain pods.spec
 kubectl explain pods --recursive
 
 kubectl exec app -- vi /log/app.log -n elastic-stack
+kubectl exec <pod> -- <bash-command>
 
 openssl x509 -in /etc/kubernetes/pki/etcd/server.crt -text -noout
 
@@ -79,7 +80,7 @@ ps -aux | grep authorization // linux processes with startup commands
 
 kubectl get pods -A --no-headers | wc -l // no. of pods in all ns
 
-kubectl exec <pod> -- <bash-command>
+
 ```
 
 `--dry-run` By default as soon as the command is run, the resource will be created. If you simply want to test your command, use the `--dry-run=client` option. This will not create the resource; instead, it tells you whether the resource can be created and if your command is right.
