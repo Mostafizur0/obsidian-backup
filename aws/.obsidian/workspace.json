@@ -74,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -248,8 +248,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1e7e60d394fd2637",
+  "active": "c790522bff0cdac1",
   "lastOpenFiles": [
+    "DevOps/Kubernetes/Security/TLS secret.md",
     "DevOps/Kubernetes/Security/Service Accounts.md",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261118050624.png",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261118031734.png",
@@ -265,7 +266,6 @@
     "DevOps/Kubernetes/Security/Image Security.md",
     "DevOps/Kubernetes/Security/Kubeconfig File.md",
     "DevOps/Kubernetes/Security/Role Based Access Controls (RBAC).md",
-    "DevOps/Kubernetes/Security/TLS secret.md",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261117230848.png",
     "DevOps/Kubernetes/CKA links.md",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261110020006.png",

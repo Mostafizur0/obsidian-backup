@@ -17,6 +17,8 @@ https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kub
 https://kubernetes.io/docs/tasks/debug/
 https://kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/
 https://kubernetes.io/docs/reference/config-api/kube-proxy-config.v1alpha1/
+https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/
+https://kubernetes.io/docs/reference/kubectl/generated/kubectl_annotate/
 
 ```
 export KUBECONFIG="${KUBECONFIG}:config-demo:config-demo-2"
@@ -50,6 +52,10 @@ kubectl create deployment nginx --image=nginx --replicas=4
 kubectl scale
 
 kubectl scale deployment nginx --replicas=4
+
+kubectl set image deployments/kubernetes-bootcamp <container-name>=docker.io/jocatalin/kubernetes-bootcamp:v2 // rolling update
+
+kubectl annotate pods foo description='my frontend'
 
 kubectl expose pod redis --port=6379 --name redis-service --dry-run=client -o yaml
 

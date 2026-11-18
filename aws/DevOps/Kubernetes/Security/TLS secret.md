@@ -67,6 +67,7 @@ Summary of the Flow
 1. **Verify**: They use their **Certificates** (Asymmetric Crypto) to prove who they are. Then extract the public key from that certificate.
 2. **Exchange**: They use **Diffie-Hellman** to agree on a shared secret key.
 3. **Encrypt**: They use the **Shared Key** (Symmetric Crypto) / temporary **symmetric session key** to encrypt the actual Kubernetes data traffic. This session key is unique to that specific connection and is discarded when the connection closes.
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Security-Specialist-CKS/Cluster-Setup-and-Hardening/TLS-in-Kubernetes/page
 
 ![[Pasted image 20260811172015.png]]
 ### Utilizing a Certificate Authority (CA)
