@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Kubernetes/Security/Service Accounts.md",
+                "file": "DevOps/Kubernetes/Security/TLS secret.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Service Accounts"
+              "title": "TLS secret"
             }
           }
         ],
@@ -250,6 +250,8 @@
   },
   "active": "1e7e60d394fd2637",
   "lastOpenFiles": [
+    "DevOps/Kubernetes/Security/Service Accounts.md",
+    "DevOps/Kubernetes/Security/attachments/Pasted image 20261118050624.png",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261118031734.png",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261118030741.png",
     "DevOps/Kubernetes/Security/Authentication.md",
@@ -263,7 +265,6 @@
     "DevOps/Kubernetes/Security/Image Security.md",
     "DevOps/Kubernetes/Security/Kubeconfig File.md",
     "DevOps/Kubernetes/Security/Role Based Access Controls (RBAC).md",
-    "DevOps/Kubernetes/Security/Service Accounts.md",
     "DevOps/Kubernetes/Security/TLS secret.md",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261117230848.png",
     "DevOps/Kubernetes/CKA links.md",
@@ -287,11 +288,9 @@
     "DevOps/Kubernetes/Designing a Kubernetes Cluster/attachments/Pasted image 20261107014141.png",
     "DevOps/Kubernetes/Designing a Kubernetes Cluster/attachments/Pasted image 20261107014008.png",
     "DevOps/Kubernetes/Designing a Kubernetes Cluster/attachments/Pasted image 20261107013739.png",
-    "DevOps/Kubernetes/Designing a Kubernetes Cluster/attachments/Pasted image 20261107013558.png",
     "DevOps/Kubernetes/Designing a Kubernetes Cluster/attachments",
     "DevOps/Kubernetes/Designing a Kubernetes Cluster",
     "DataEngineering",
-    "DevOps/Kubernetes/Networking/attachments/Pasted image 20261105012101.png",
     "DevOps/Kubernetes/Networking/attachments",
     "DevOps/Kubernetes/Networking",
     "DevOps/Kubernetes/Storage/attachments",

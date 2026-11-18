@@ -2,6 +2,8 @@
 
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/Service-Accounts/page
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/Lab-Solution-Service-Accounts/page
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Security-Specialist-CKS/Cluster-Setup-and-Hardening/Service-Accounts/page
+
 There are two main types of accounts in Kubernetes:
 - **User Accounts:** Designed for human users like administrators or developers.
 - **Service Accounts:** Intended for machine-to-machine interactions or application-specific tasks. For instance, monitoring tools like Prometheus use a service account to query the Kubernetes API for performance metrics, while Jenkins uses one for deploying applications.
@@ -34,6 +36,18 @@ When deploying third-party applications (such as a custom dashboard or Prometheu
 ![[Pasted image 20261118031734.png|204]]
 
 ==Every process running inside a pod needs an identity to communicate with the Kubernetes API server. This ensures pods have immediate, out-of-the-box infrastructure to authenticate their requests.== Every namespace includes a default service account that is automatically injected into Pods. For example, consider the following simple Pod manifest using a custom dashboard image:
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-kubernetes-dashboard
+spec:
+  serviceAccountName: dashboard-sa
+  containers:
+    - name: my-kubernetes-dashboard
+      image: my-kubernetes-dashboard
+```
+
 ```bash
 kubectl describe pod my-kubernetes-dashboard
 ```
@@ -77,15 +91,62 @@ spec:
 Starting with Kubernetes v1.24, Kubernetes no longer automatically creates non-expiring service account tokens stored as Secrets. Instead, after creating a new service account, you must generate a token explicitly with:
 ```bash
 kubectl create token dashboard-sa
+kubectl create token dashboard-sa --duration 2h
 ```
 
-If necessary (though not recommended), you can still create a non-expiring token by manually creating a Secret. Ensure the service account exists first:
+By default all tokens are valid for 1 hour.
+If you decide to revert to the old method of manually creating a Secret, you can do so by defining a Secret with the type `kubernetes.io/service-account-token` and adding the appropriate annotation:
 ```yaml
 apiVersion: v1
 kind: Secret
+type: kubernetes.io/service-account-token
 metadata:
   name: mysecretname
   annotations:
     kubernetes.io/service-account.name: dashboard-sa
-type: kubernetes.io/service-account-token
+```
+Ensure that the service account exists before creating the Secret to guarantee proper association. However, the recommended practice is to utilize the token request API for better security and token management.
+
+![[Pasted image 20261118050624.png]]
+
+When a pod is created now, Kubernetes communicates with the token controller API to produce a token with a defined lifetime. The following example demonstrates a pod definition using a projected volume:
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  namespace: default
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      volumeMounts:
+        - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+          name: kube-api-access-6mtg8
+          readOnly: true
+  volumes:
+    - name: kube-api-access-6mtg8
+      projected:
+        defaultMode: 420
+        sources:
+          - serviceAccountToken:
+              expirationSeconds: 3607
+              path: token
+          - configMap:
+              name: kube-root-ca.crt
+              items:
+                - key: ca.crt
+                  path: ca.crt
+          - downwardAPI:
+              items:
+                - fieldRef:
+                    apiVersion: v1
+                    fieldPath: metadata.namespace
+```
+
+Prior to these enhancements, the service account token was mounted as a traditional Secret. Today, it is provided as a projected volume that interacts dynamically with the token controller API.
+
+This command outputs a token with an expiry (default is one hour unless configured otherwise). To inspect token details, you can decode it using tools such as JWT.io or by running:
+```bash
+jq -R 'split(".") | select(length > 0) | .[0] | @base64 | fromjson' <<< eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6ZGVmYXVsdC1kYXNob2FyZC1zYSIsImF1ZCI6WyJodHRwczovL2t1YmVybmV0ZXMuZGVmYXVsdC5zdmMuY2x1c3Rlci5sb2NhbCJdLCJleHBpcmF0aW9uIjoxNjY0MDM3NzYzLCJpc3MiOiJodHRwczovL2t1YmVybmV0ZXMuZGVmYXVsdC5zdmMuY2x1c3Rlci5sb2NhbCJ9.k5Y3R-
 ```
