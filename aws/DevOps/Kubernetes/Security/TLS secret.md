@@ -10,6 +10,25 @@ kubectl create secret tls webhook-server-tls \
 https://support.virtru.com/hc/en-us/articles/39253944595351-Kubernetes-TLS-Secret
 
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/TLS-Basics/page
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Security-Specialist-CKS/Cluster-Setup-and-Hardening/TLS-Basics/page
+
+This complete framework, which includes CAs, key pairs, digital certificates, and database practices for key management, is known as Public Key Infrastructure (PKI).
+
+| Step                            | Process Description                                                                                          |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **1. Key Pair Generation**      | An administrator generates a key pair for SSH and the web server generates a key pair for HTTPS.             |
+| **2. CSR Creation**             | The web server creates a Certificate Signing Request (CSR) and submits it to a CA.                           |
+| **3. Certificate Signing**      | The CA signs the certificate with its private key and returns the signed certificate to the server.          |
+| **4. Certificate Distribution** | When users visit the website, the server sends its signed certificate containing its public key.             |
+| **5. Certificate Validation**   | The browser validates the certificate using the CA’s public key.                                             |
+| **6. Symmetric Key Exchange**   | The browser generates a symmetric key, encrypts it with the server’s public key, and sends it to the server. |
+| **7. Secure Communication**     | The server decrypts the symmetric key with its private key, and all subsequent communication is secured.     |
+
+Digital certificates serve as more than just containers for public keys. They provide essential details including:
+- Certificate owner’s identity (subject)
+- Issuer’s identity
+- Validity dates
+- Subject Alternative Names (SANs) for multiple domain support
 ```yml
 Certificate:
 Data:
@@ -51,6 +70,17 @@ Summary of the Flow
 
 ![[Pasted image 20260811172015.png]]
 ### Utilizing a Certificate Authority (CA)
+While anyone can create a certificate (including fraudulent ones), trusted Certificate Authorities (CAs) such as Symantec, DigiCert, Komodo, or GlobalSign play a vital role in establishing trust. The process is as follows:
+
+1. Generate a Certificate Signing Request (CSR) using your private key and domain name:
+    
+    ```
+    openssl req -new -key my-bank.key -out my-bank.csr -subj "/C=US/ST=CA/O=MyOrg, Inc./CN=my-bank.com"
+    ```
+    
+2. Submit the CSR to a CA.
+3. The CA verifies your information and, once validated, signs your certificate.
+4. The signed certificate is returned and installed on your server, ensuring that browsers trust your website.
 ![[Pasted image 20260811172304.png]]
 
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/TLS-in-Kubernetes-Certificate-Creation/page
@@ -186,3 +216,20 @@ https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security
 > ```
 
 ---
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Security-Specialist-CKS/Cluster-Setup-and-Hardening/TLS-Basics/page
+# Display authorized keys on the server
+To secure your server, add the contents of your public key file to the `~/.ssh/authorized_keys` file on the server:
+```bash
+cat ~/.ssh/authorized_keys
+```
+Then, access the server using your private key with:
+```bash
+ssh -i id_rsa user1@server1
+```
+
+When a user connects:
+1. The server sends its public key embedded in a certificate.
+2. The browser encrypts a newly generated symmetric key with this public key.
+3. The server uses its private key to decrypt the symmetric key.
+4. Future communication is secured using the symmetric key.
+
