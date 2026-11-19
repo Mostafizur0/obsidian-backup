@@ -233,4 +233,5 @@ When a user connects:
 2. The browser encrypts a newly generated symmetric key with this public key.
 3. The server uses its private key to decrypt the symmetric key.
 4. Future communication is secured using the symmetric key.
-
+# Debug Certificate Issues
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Security-Specialist-CKS/Cluster-Setup-and-Hardening/View-Certificate-Details/page
