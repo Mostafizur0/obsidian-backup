@@ -57,16 +57,16 @@ PersistentVolumes (PVs) solve this by enabling central storage management at the
 Key concepts at a glance:
 - PersistentVolume (PV): a cluster-scoped resource representing a piece of storage.
 - PersistentVolumeClaim (PVC): a user request for storage that gets bound to a PV.
-- StorageClass: optional resource to enable dynamic provisioning of PVs.
+- StorageClass: optional resource to enable dynamic provisioning of PVs. PVC will either have PV or StorageClass, but not both.
 - Binding: the process that matches PVCs to available PVs based on size, access mode, and selectors. (Described below)
 
 <span style="color: #22C55E;">Access modes determine how a volume can be mounted by Pods. Common modes include `ReadWriteOnce`, `ReadOnlyMany`, and `ReadWriteMany`.</span> See the table below for concise descriptions and typical use cases.
 
-| Access Mode     | Description                            | Typical use case                                                          |
-| --------------- | -------------------------------------- | ------------------------------------------------------------------------- |
-| `ReadWriteOnce` | Mounted as read-write by a single node | Block storage (AWS EBS, GCE PD) used by one Pod at a time per node        |
-| `ReadOnlyMany`  | Mounted read-only by many nodes        | Shared read-only content (e.g., shared config or static data)             |
-| `ReadWriteMany` | Mounted read-write by many nodes       | Networked file systems (NFS, some CSI plugins) for shared writable access |
+| Access Mode     | Description                                | Typical use case                                                          |
+| --------------- | ------------------------------------------ | ------------------------------------------------------------------------- |
+| `ReadWriteOnce` | Mounted as read-write by a ==single node== | Block storage (AWS EBS, GCE PD) used by ==one Pod at a time per node==    |
+| `ReadOnlyMany`  | Mounted read-only by ==many nodes==        | Shared read-only content (e.g., shared config or static data)             |
+| `ReadWriteMany` | Mounted read-write by ==many nodes==       | Networked file systems (NFS, some CSI plugins) for shared writable access |
 Common PV provisioning approaches:
 
 | Provisioning type    | Description                                           | Typical plugins/examples                                                          |

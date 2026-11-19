@@ -6,6 +6,7 @@ https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Storage/
 
 - Static provisioning: <span style="color: #22C55E;">you create cloud disks ahead of time,</span> then create the matching PersistentVolume (PV) objects and PersistentVolumeClaims (PVCs).
 - Dynamic provisioning (StorageClass): StorageClasses enable dynamic provisioning. <span style="color: #22C55E;">When a PVC is created that references a StorageClass, Kubernetes uses the provisioner defined in that StorageClass to create backing storage on the cloud provider. The provisioner creates the disk, a PV object is created automatically, and the PVC binds to that PV.</span>
+So, PVC will either have PV or StorageClass, but not both 
 ![[Pasted image 20261104222311.png]]
 
 Minimal StorageClass yaml
