@@ -62,3 +62,4 @@ When you apply the PVC above, the StorageClass’s provisioner will create the d
 |---|---|---|---|
 |Static|Operator / admin|Operator / admin|Before PVC is applied|
 |Dynamic (StorageClass)|Provisioner (cloud driver)|Provisioner (Kubernetes)|When PVC is created and requests a StorageClass|
+To view a StorageClass that <span style="color: #22C55E;">does not support dynamic volume provisioning</span> in Kubernetes (or OpenShift), run `kubectl get storageclass` (or `kubectl get sc`) and look for kubernetes.io/no-provisioner in the **`PROVISIONER`** column.
