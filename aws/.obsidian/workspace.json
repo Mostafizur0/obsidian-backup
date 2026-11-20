@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Kubernetes/Security/TLS secret.md",
+                "file": "DevOps/Kubernetes/Security/TLS Certificates And Secrets.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TLS secret"
+              "title": "TLS Certificates And Secrets"
             }
           }
         ],
@@ -254,7 +254,7 @@
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261120041314.png",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261120041238.png",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261120040828.png",
-    "DevOps/Kubernetes/Security/TLS secret.md",
+    "DevOps/Kubernetes/Security/TLS Certificates And Secrets.md",
     "DevOps/Kubernetes/CKA links.md",
     "DevOps/Kubernetes/Etcd.md",
     "DevOps/Kubernetes/Storage/Storage Class.md",

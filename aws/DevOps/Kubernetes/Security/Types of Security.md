@@ -11,7 +11,7 @@ Before diving into the intricacies of Kubernetes security, it is essential to se
 2. [[Authorization]]
 # Securing Intra-Cluster Communications
 A critical element of Kubernetes security involves securing communications between various cluster components. All interactions between components—such as the etcd cluster, kube controller manager, scheduler, API server, and worker node components (including kubelet and kube-proxy)—are protected using TLS encryption.
-[[TLS secret]]
+[[TLS Certificates And Secrets]]
 [[Certificate Lifecycle and API]]
 # Network Policies Within the Cluster
 By default, pods within a Kubernetes cluster can communicate freely with one another. To restrict unwanted access and tighten security, network policies can be implemented. These policies enable you to control traffic flow between pods and are an integral part of securing inter-application communications within the cluster.

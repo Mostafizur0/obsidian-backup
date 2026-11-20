@@ -1,4 +1,4 @@
-[[TLS secret]]
+[[TLS Certificates And Secrets]]
 
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Security-Specialist-CKS/Cluster-Setup-and-Hardening/TLS-in-Kubernetes-Certificate-Creation/page
 To generate certificates for a Kubernetes cluster we can use tools like EasyRSA, CFSSL and OpenSSL.

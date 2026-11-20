@@ -92,7 +92,7 @@ These are the certificates Kubernetes itself uses for internal component authent
 
 In Kubernetes, the ==**aggregation layer**== allows you to plug custom or extension API servers (such as `metrics-server`) into the main `kube-apiserver`.
 
-[[TLS secret]]
+[[TLS Certificates And Secrets]]
 
 ```
 /etc/kubernetes/pki/
