@@ -1,6 +1,8 @@
 [[DevOps/Kubernetes/Security/Security|Security]]
 
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/KubeConfig/page#understanding-the-kubeconfig-file
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Security-Specialist-CKS/Cluster-Setup-and-Hardening/KubeConfig/page
+
 By default, kubectl searches for a kubeconfig file named “config” in the ~/.kube directory.
 
 Without kubeconfig file kube request and command would be like below
@@ -59,6 +61,7 @@ contexts:
 - context:
     cluster: kubernetes
     user: kubernetes-admin
+    namespace: finance # optional field
   name: kubernetes-admin@kubernetes
 users:
 - name: kubernetes-admin
@@ -168,7 +171,4 @@ graph TD
 ## 🔗 Related Notes
 * [[Kubectl Cheat Sheet]]
 * [[Managing Multiple Kubernetes Clusters]]
----
-# API Groups
-https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/API-Groups/page
-![[Pasted image 20261010015622.png]]
+

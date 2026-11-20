@@ -1,12 +1,20 @@
 [[DevOps/Kubernetes/Security/Security|Security]]
 
 https://notes.kodekloud.com/docs/Certified-Kubernetes-Administrator-CKA/Security/Certificates-API/page
+https://notes.kodekloud.com/docs/Certified-Kubernetes-Security-Specialist-CKS/Cluster-Setup-and-Hardening/Certificates-API/page
 
 Kubernetes simplifies certificate management through its built-in Certificates API, automating the CSR lifecycle and certificate rotation. This automation is essential for maintaining secure access as team sizes grow and certificates expire over time.
 # Managing Certificate Signing Requests (CSRs)
 ### Step 1: User Generates Private Key and CSR
 ```bash
 openssl genrsa -out jane.key 2048
+openssl req -new -key jane.key -subj "/CN=jane" -out jane.csr
+```
+The generated CSR (jane.csr) will have a structure similar to:
+```cert
+-----BEGIN CERTIFICATE REQUEST-----
+MIICWDCCCAAwE...dhk
+-----END CERTIFICATE REQUEST-----
 ```
 ### Step 2: Administrator Creates a CSR Object
 ```yaml
@@ -39,6 +47,10 @@ or delete the request
 kubectl delete csr jane
 ```
 After approval the object becomes
+```bash
+kubectl get csr jane -o yaml
+```
+
 ```yml
 apiVersion: certificates.k8s.io/v1
 kind: CertificateSigningRequest
