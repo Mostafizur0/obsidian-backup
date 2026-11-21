@@ -74,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -248,10 +248,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1e7e60d394fd2637",
+  "active": "c790522bff0cdac1",
   "lastOpenFiles": [
-    "DevOps/Kubernetes/Security/Kubeconfig File.md",
     "DevOps/Kubernetes/Security/API Groups.md",
+    "DevOps/Kubernetes/Security/Kubeconfig File.md",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261120215118.png",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261120214701.png",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261120214148.png",

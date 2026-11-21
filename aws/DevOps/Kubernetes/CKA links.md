@@ -92,3 +92,6 @@ kubectl get pods -A --no-headers | wc -l // no. of pods in all ns
 `--dry-run` By default as soon as the command is run, the resource will be created. If you simply want to test your command, use the `--dry-run=client` option. This will not create the resource; instead, it tells you whether the resource can be created and if your command is right.
 
 `-o yaml` This will output the resource definition in YAML format on the screen.
+
+pod dns - 172-17-1-18.default.pod or ``` 172-17-0-3.default.pod.cluster.local ``` (```<pod-IPv4-address>.<namespace>.pod.<cluster-domain> ```) for pod with ip 172.17.1.18
+https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#a-aaaa-records-1
