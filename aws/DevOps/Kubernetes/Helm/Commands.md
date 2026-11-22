@@ -1,5 +1,30 @@
 [[Helm]]
 
+https://sailor.sh/blog/cka-helm-kustomize-guide/
+
+Install a helm chart
+```bash
+helm repo list
+
+helm search repo apache
+
+helm install amaze-surf bitnami/apache
+```
+
+upgrade
+```bash
+helm search repo nginx --versions | grep 1.27
+
+helm upgrade dazzling-web bitnami/nginx --version 18.3.6
+```
+
+rolback
+```
+helm history dazzling-web
+
+helm rollback dazzling-web 3
+```
+
 ```bash
 # Snap (Ubuntu / distributions with snapd)
 sudo snap install helm --classic
@@ -30,6 +55,11 @@ helm repo list
 ```
 
 ```bash
+# most important command
+helm template myapp/ # Render Templates Without Deploying
+
+helm template my-web bitnami/nginx --set replicaCount=2 | less
+
 helm search hub wordpress
 # Download the chart archive
 helm pull bitnami/wordpress
@@ -60,6 +90,8 @@ helm install my-release bitnami/wordpress --values custom-values.yaml
 helm install nginx-release bitnami/nginx --version 7.1.0
 
 helm upgrade nginx-release bitnami/nginx
+
+helm upgrade myapp ./chart --install --namespace prod --values values/prod.yaml
 
 helm list
 
