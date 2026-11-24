@@ -28,7 +28,7 @@
               "type": "markdown",
               "state": {
                 "file": "DevOps/Docker/Docker Storage.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -248,10 +248,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1e7e60d394fd2637",
+  "active": "84b06326bce11303",
   "lastOpenFiles": [
-    "DevOps/Kubernetes/Helm/Helm.md",
+    "DevOps/Docker/Docker Storage.md",
+    "DevOps/Kubernetes/Etcd.md",
     "DevOps/Kubernetes/Helm/Commands.md",
+    "DevOps/Linux/Linux job control.md",
+    "DevOps/Kubernetes/Helm/Helm.md",
     "DevOps/Kubernetes/Security/API Groups.md",
     "DevOps/Kubernetes/CKA links.md",
     "DevOps/Kubernetes/Security/Kubeconfig File.md",
@@ -267,13 +270,11 @@
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261120041314.png",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261120041238.png",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261120040828.png",
-    "DevOps/Kubernetes/Etcd.md",
     "DevOps/Kubernetes/Storage/Storage Class.md",
     "DevOps/Kubernetes/Storage/Volumes, PV, PVC.md",
     "DevOps/Kubernetes/Storage/Container Storage Interface (CSI).md",
     "DevOps/Kubernetes/Storage/Storage.md",
     "DevOps/Python/pyproject.toml.md",
-    "DevOps/Docker/Docker Storage.md",
     "DevOps/Kubernetes/Security/Service Accounts.md",
     "DevOps/Kubernetes/Security/attachments/Pasted image 20261118050624.png",
     "DevOps/Kubernetes/Security/Authentication.md",
@@ -285,7 +286,6 @@
     "DevOps/Kubernetes/Security/CIS Benchmarks.md",
     "DevOps/Kubernetes/Security/Image Security.md",
     "DevOps/Kubernetes/Security/Role Based Access Controls (RBAC).md",
-    "DevOps/Kubernetes/Troubleshooting/Network Troubleshooting.md",
     "DevOps/Kubernetes/Kustomize",
     "DevOps/Kubernetes/Helm/attachments",
     "DevOps/Kubernetes/Helm",
