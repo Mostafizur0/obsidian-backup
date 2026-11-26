@@ -1,4 +1,6 @@
 [[Homelab]]
+
+https://felipetrindade.com/kubernetes-ingress-load-balancer/
 https://medium.com/@enrique.torresds/setting-up-a-kubernetes-cluster-using-ubuntu-virtual-machines-and-hyper-v-part-i-8719f79d045e
 
 # Kubernetes Cluster Setup Guide

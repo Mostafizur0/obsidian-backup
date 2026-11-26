@@ -1,3 +1,5 @@
+https://metallb.universe.tf/installation/
+https://metallb.io/installation/network-addons/
 # MetalLB
 MetalLB is a load-balancer implementation for bare metal Kubernetes clusters, using standard routing protocols. 
 It works in hub and spoke model. controller deployment works as hub and speaker demon set work as spoke. It is a software based LB not a physical LB. It needs an Ip pool to get the IP. 

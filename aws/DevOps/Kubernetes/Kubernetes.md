@@ -1,4 +1,5 @@
 https://github.com/hashicorp/memberlist
+https://github.com/kubernetes/examples
 ## Versions
 ![[Pasted image 20260807153756.png]]
 1st block all be in same version, 2nd block maintain different version and installed seperately.
